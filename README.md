@@ -29,6 +29,8 @@ Set `AGNES_API_KEY` in `.env`. Important defaults:
 - `WORKER_AUTO_START=true` resumes processing when the server restarts.
 - `DATABASE_PATH=./data/vocabulary-videos.sqlite` keeps queue progress.
 - `VIDEO_OUTPUT_ROOT=./videos` stores clips, manifests, and chapter videos.
+- `LOG_DIRECTORY=./logs` stores daily rotated logs; `LOG_RETENTION=14d` keeps
+  two weeks by default.
 
 Start the service:
 
@@ -87,6 +89,24 @@ It records `video_id` before polling, so a restart resumes that Agnes job
 instead of submitting a duplicate. Network failures use exponential backoff.
 HTTP 429 pauses submissions for the remainder of the configured local day.
 Every attempted submission reserves five seconds conservatively.
+
+## Logging and diagnosing waits
+
+The console and `logs/application-YYYY-MM-DD.log` now record every important
+worker transition: pause/start, submitted task IDs, each Agnes poll and
+progress percentage, downloads, retry time, rate limits, and daily-budget
+stops. Errors are also written to `logs/error-YYYY-MM-DD.log`.
+
+When an Agnes task is slow, expect repeated entries such as:
+
+```text
+Job 13: chapter 1, "Longitude", sentence 1 polled Agnes task task_...:
+processing -> processing, remote status "processing", progress 42%, elapsed 95s.
+```
+
+This means the application is still working and waiting for Agnes. If a task
+does not change after a long period, use `GET /videos/status` and inspect the
+latest log entries before deciding whether to pause or retry it.
 
 To perform a one-clip production check before spending a full day's quota, set
 `DAILY_VIDEO_SECONDS=5`, restart, import, and start the worker. Restore it to

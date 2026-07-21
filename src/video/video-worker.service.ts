@@ -30,6 +30,7 @@ export class VideoWorkerService
   private running = false;
   private paused = true;
   private rateLimitedOnDate: string | null = null;
+  private budgetExhaustedOnDate: string | null = null;
 
   constructor(
     @InjectRepository(VideoJob)
@@ -42,6 +43,9 @@ export class VideoWorkerService
   onApplicationBootstrap(): void {
     this.paused =
       process.env.WORKER_AUTO_START === 'false' || !this.agnes.isConfigured();
+    this.logger.log(
+      `Worker initialized: ${this.paused ? 'paused' : 'running'}, poll interval ${this.pollIntervalMs / 1000}s, daily budget ${this.dailyVideoSeconds}s.`,
+    );
     this.timer = setInterval(() => {
       void this.tick();
     }, this.pollIntervalMs);
@@ -62,12 +66,16 @@ export class VideoWorkerService
       throw new BadRequestException('AGNES_API_KEY is not configured.');
     }
     this.paused = false;
+    this.logger.log('Worker started or resumed by API request.');
     await this.tick();
     return this.runtimeState();
   }
 
   pause(): { paused: boolean; configured: boolean } {
     this.paused = true;
+    this.logger.warn(
+      'Worker paused by API request. Existing Agnes tasks continue remotely and will resume polling after start.',
+    );
     return this.runtimeState();
   }
 
@@ -112,6 +120,9 @@ export class VideoWorkerService
       order: { completedAt: 'ASC', id: 'ASC' },
     });
     if (completed) {
+      this.logger.log(
+        `${this.jobLabel(completed)} is complete on Agnes; downloading the MP4.`,
+      );
       await this.download(completed);
       return;
     }
@@ -129,6 +140,9 @@ export class VideoWorkerService
           nextAttemptAt: LessThanOrEqual(new Date()),
         },
       ],
+      relations: {
+        sentence: { word: { chapter: true } },
+      },
       order: { submittedAt: 'ASC', id: 'ASC' },
     });
     if (active) {
@@ -148,13 +162,21 @@ export class VideoWorkerService
       order: { id: 'ASC' },
     });
     if (!pending) {
+      this.logger.log('Queue is idle: no pending jobs are ready to submit.');
       return;
     }
 
     const reserved = await this.reserveDailyBudget();
     if (!reserved) {
+      if (this.budgetExhaustedOnDate !== this.localDate()) {
+        this.budgetExhaustedOnDate = this.localDate();
+        this.logger.warn(
+          `Daily generation budget exhausted (${this.dailyVideoSeconds}s). New submissions resume on the next local day.`,
+        );
+      }
       return;
     }
+    this.budgetExhaustedOnDate = null;
     await this.submit(pending);
   }
 
@@ -169,7 +191,7 @@ export class VideoWorkerService
       job.lastError = null;
       await this.jobs.save(job);
       this.logger.log(
-        `Submitted sentence ${job.sentenceId} as ${result.video_id}`,
+        `${this.jobLabel(job)} submitted to Agnes as ${result.video_id}. Waiting for the first status poll.`,
       );
     } catch (error) {
       const apiError = this.asApiError(error);
@@ -186,6 +208,19 @@ export class VideoWorkerService
       job.status = permanent ? VideoJobStatus.FAILED : VideoJobStatus.PENDING;
       job.nextAttemptAt = permanent ? null : this.retryTime(job.attempts);
       await this.jobs.save(job);
+      if (apiError.rateLimited) {
+        this.logger.warn(
+          `${this.jobLabel(job)} received HTTP 429 from Agnes. New submissions are paused until tomorrow.`,
+        );
+      } else if (permanent) {
+        this.logger.error(
+          `${this.jobLabel(job)} failed permanently after ${job.attempts} submission attempt(s): ${apiError.message}`,
+        );
+      } else {
+        this.logger.warn(
+          `${this.jobLabel(job)} submission failed; retrying at ${job.nextAttemptAt?.toISOString()}: ${apiError.message}`,
+        );
+      }
     }
   }
 
@@ -199,8 +234,15 @@ export class VideoWorkerService
 
     try {
       const result = await this.agnes.getVideo(job.externalVideoId);
+      const previousStatus = job.status;
       this.applyRemoteStatus(job, result);
       await this.jobs.save(job);
+      const elapsed = job.submittedAt
+        ? `${Math.floor((Date.now() - job.submittedAt.getTime()) / 1000)}s`
+        : 'unknown duration';
+      this.logger.log(
+        `${this.jobLabel(job)} polled Agnes task ${job.externalVideoId}: ${previousStatus} -> ${job.status}, remote status "${result.internal_status ?? result.status}", progress ${result.progress ?? 'unknown'}%, elapsed ${elapsed}.`,
+      );
     } catch (error) {
       const apiError = this.asApiError(error);
       job.lastError = apiError.message;
@@ -218,6 +260,19 @@ export class VideoWorkerService
         this.rateLimitedOnDate = this.localDate();
       }
       await this.jobs.save(job);
+      if (apiError.rateLimited) {
+        this.logger.warn(
+          `${this.jobLabel(job)} status polling received HTTP 429. Polling pauses until tomorrow.`,
+        );
+      } else if (job.status === VideoJobStatus.FAILED) {
+        this.logger.error(
+          `${this.jobLabel(job)} status polling failed permanently: ${apiError.message}`,
+        );
+      } else {
+        this.logger.warn(
+          `${this.jobLabel(job)} status poll failed; retrying at ${job.nextAttemptAt?.toISOString()}: ${apiError.message}`,
+        );
+      }
     }
   }
 
@@ -277,11 +332,14 @@ export class VideoWorkerService
       job.nextAttemptAt = null;
       await this.jobs.save(job);
       await this.assembly.writeManifest(chapter.number);
-      this.logger.log(`Downloaded ${job.localPath}`);
+      this.logger.log(`${this.jobLabel(job)} downloaded to ${job.localPath}.`);
     } catch (error) {
       job.lastError = this.asApiError(error).message;
       job.nextAttemptAt = this.retryTime(1);
       await this.jobs.save(job);
+      this.logger.warn(
+        `${this.jobLabel(job)} download failed; retrying at ${job.nextAttemptAt.toISOString()}: ${job.lastError}`,
+      );
     }
   }
 
@@ -360,5 +418,15 @@ export class VideoWorkerService
 
   private get videoRoot(): string {
     return process.env.VIDEO_OUTPUT_ROOT ?? join(process.cwd(), 'videos');
+  }
+
+  private jobLabel(job: VideoJob): string {
+    const sentence = job.sentence;
+    const word = sentence?.word;
+    const chapter = word?.chapter;
+    if (!sentence || !word || !chapter) {
+      return `Job ${job.id} (sentence ${job.sentenceId})`;
+    }
+    return `Job ${job.id}: chapter ${chapter.number}, "${word.text}", sentence ${sentence.sourceOrder}`;
   }
 }
