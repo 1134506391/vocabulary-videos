@@ -1,0 +1,517 @@
+Law.
+
+Everyone must follow the law.
+
+Legal.
+
+It is legal to drive at eighteen.
+
+Rule.
+
+No phones is the rule in our class.
+
+The country was once ruled by a powerful queen.
+
+Regulation.
+
+Read the safety regulations before using the machine.
+
+Item.
+
+The next item on the list is milk.
+
+Treaty.
+
+The two countries signed a peace treaty.
+
+Agreement.
+
+We reached an agreement on the price.
+
+Charter.
+
+The school has a clear student rights charter.
+
+They chartered a small plane to reach the remote island.
+
+Protocol.
+
+Follow the safety protocol before entering.
+
+Norm.
+
+Arriving on time is the norm here.
+
+Benchmark.
+
+Her score set a new benchmark for the class.
+
+Criteria.
+
+What are the criteria for the job?
+
+Standard.
+
+The work didn't meet the required standard.
+
+Permit.
+
+You need a permit to park here.
+
+The rules do not permit food inside the museum.
+
+Allow.
+
+Dogs are not allowed inside the shop.
+
+Admission.
+
+She gained admission to her first-choice school.
+
+His admission of guilt shocked the whole courtroom.
+
+Admission to the museum is free on Sundays.
+
+Perform.
+
+She performed very well in the interview.
+
+Enforce.
+
+The school strictly enforces its rules.
+
+Default.
+
+He defaulted on his monthly loan payment.
+
+Just restore the phone to its default settings.
+
+Reject.
+
+The bank rejected his application.
+
+The factory sells its rejects at a lower price.
+
+Constraint.
+
+Budget constraints delayed the project.
+
+Official.
+
+She received an official letter from the school.
+
+Mandatory.
+
+Wearing a helmet is mandatory on this site.
+
+Potent.
+
+This cough syrup is quite potent.
+
+Bound.
+
+You are bound to face some challenges.
+
+The dog bounded over the fence to chase the cat.
+
+Talking about salary is out of bounds at this company.
+
+Obligation.
+
+We have an obligation to help our neighbors.
+
+Court.
+
+The case will be settled in court.
+
+They played basketball on the outdoor court all afternoon.
+
+Supreme.
+
+The supreme court made its final decision.
+
+Enact.
+
+The city enacted a new recycling law.
+
+Legislate.
+
+The government legislated against drunk driving.
+
+Equity.
+
+Everyone deserves equity in the workplace.
+
+Fair.
+
+The teacher tried to be fair to all students.
+
+They rode the Ferris wheel together at the county fair.
+
+She has fair skin, so she burns easily in the sun.
+
+Just.
+
+That punishment doesn't seem just to me.
+
+I just got home from work a few minutes ago.
+
+Prejudice.
+
+Try not to let prejudice affect your decisions.
+
+Discrimination.
+
+Discrimination at work is against the law.
+
+Accuse.
+
+She accused him of taking her lunch.
+
+Sue.
+
+He sued the shop for selling him a broken phone.
+
+Prosecute.
+
+He was prosecuted for speeding three times.
+
+Condemn.
+
+Everyone condemned the act of bullying.
+
+Complain.
+
+She complained about the cold food.
+
+Boycott.
+
+They boycotted the brand after the scandal.
+
+Session.
+
+The training session starts at nine.
+
+Mediate.
+
+The teacher mediated between the two arguing students.
+
+Plea.
+
+He made a plea for more time to finish the work.
+
+He entered a guilty plea in front of the judge.
+
+Appeal.
+
+She appealed for help after the flood.
+
+The lawyer filed an appeal against the court's decision.
+
+The old house had a certain quiet appeal to her.
+
+Contradict.
+
+His actions contradict what he said earlier.
+
+Persuade.
+
+She persuaded him to go to the doctor.
+
+Controversy.
+
+The new rule caused a lot of controversy.
+
+Whisper.
+
+She whispered the answer to her friend.
+
+Mutter.
+
+He muttered something under his breath.
+
+Murmur.
+
+There was a murmur in the crowd.
+
+Silent.
+
+Please stay silent during the performance.
+
+Mute.
+
+He put his phone on mute during the meeting.
+
+Investigate.
+
+The school investigated the incident quickly.
+
+Witness.
+
+She witnessed the accident from her window.
+
+Justify.
+
+He tried to justify being late with excuses.
+
+Reasonable.
+
+That price seems very reasonable to me.
+
+Suitable.
+
+Is this movie suitable for young children?
+
+Judge.
+
+Don't judge someone before you know them well.
+
+The judge listened carefully before making her decision.
+
+Jury.
+
+The jury took two hours to reach a verdict.
+
+Trial.
+
+The trial lasted three weeks.
+
+The company offered a free trial of the new app.
+
+Suspect.
+
+The police have a suspect in custody.
+
+Sentence.
+
+He was sentenced to community service.
+
+Circle the verb in the following sentence.
+
+Arrest.
+
+The man was arrested near the scene.
+
+Jail.
+
+He spent three days in jail for the offense.
+
+Prison.
+
+She was sent to prison for fraud.
+
+Confine.
+
+He was confined to bed with a bad back.
+
+Oversee.
+
+She oversees the whole project.
+
+Supervise.
+
+A teacher supervised the exam room.
+
+Restrict.
+
+Access to the area was restricted.
+
+Restrain.
+
+He could barely restrain his excitement.
+
+Commit.
+
+Never commit to something you can't finish.
+
+He was arrested for committing a serious crime.
+
+Sin.
+
+He felt he had committed a sin by lying.
+
+Crime.
+
+Theft is a crime no matter how small.
+
+Vice.
+
+Laziness is a vice that holds people back.
+
+Bribe.
+
+He was caught trying to bribe an official.
+
+Rob.
+
+The store was robbed last night.
+
+Pirate.
+
+They sell pirate DVDs on that street.
+
+Steal.
+
+He was caught stealing from a supermarket.
+
+That handbag was such a steal at half price.
+
+Thief.
+
+The thief ran off with her bag.
+
+Murder.
+
+The murder case was solved within a week.
+
+Suicide.
+
+If you are struggling, please talk to someone.
+
+Deceive.
+
+He deceived his parents about his grades.
+
+Cheat.
+
+He cheated on the exam and got caught.
+
+Fraud.
+
+The online fraud tricked many people.
+
+Liar.
+
+She knew he was a liar from the start.
+
+Trap.
+
+The cat set a trap for the mouse.
+
+Trick.
+
+He played a trick on his brother.
+
+Pretend.
+
+She pretended to be asleep.
+
+Fool.
+
+Don't be a fool and sign without reading.
+
+He tried to fool his sister into believing it was her birthday.
+
+Stigma.
+
+There is still a stigma around asking for help.
+
+Confess.
+
+He confessed to breaking the window.
+
+Conform.
+
+New students quickly conform to school rules.
+
+Reconcile.
+
+They reconciled after a long argument.
+
+Obey.
+
+Children should obey basic safety rules.
+
+Succumb.
+
+Don't succumb to the pressure of others.
+
+Penalty.
+
+The penalty for littering is a fine.
+
+Fine.
+
+She got a fine for parking in the wrong spot.
+
+The soup tastes fine, but it could use a little more salt.
+
+Mortgage.
+
+They took out a mortgage to buy the house.
+
+Ownership.
+
+He transferred ownership of the car to her.
+
+Copyright.
+
+You can't copy this photo without permission.
+
+Privilege.
+
+Having clean water is a privilege many take for granted.
+
+Credit.
+
+She gave him full credit for the idea.
+
+Clue.
+
+The muddy footprint was the only clue.
+
+Access.
+
+Students have access to the library all day.
+
+Anonymous.
+
+The donation was made by an anonymous person.
+
+False.
+
+He gave a false name at the front desk.
+
+Genuine.
+
+This bag is made of genuine leather.
+
+Procedure.
+
+Follow the correct procedure when reporting a problem.
+
+Routine.
+
+She follows a strict morning routine.
+
+Consequence.
+
+Think about the consequences before you decide.
+
+Demand.
+
+This job demands a lot of patience.
+
+Prices rise when demand is greater than supply.
+
+Request.
+
+She made a request for more time.
+
+Require.
+
+A visa is required to enter the country.
+
+Petition.
+
+Students signed a petition for longer lunch breaks.
+
+Command.
+
+The captain gave the command to stop.
+
+She has an excellent command of the English language.
+
+Instruct.
+
+The coach instructed the team before the game.

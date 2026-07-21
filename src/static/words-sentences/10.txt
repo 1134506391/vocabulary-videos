@@ -1,0 +1,659 @@
+Stuff.
+
+I left some of my stuff at your place yesterday.
+
+Item.
+
+There is only one item left on the shopping list.
+
+Merchandise.
+
+The store displays its merchandise in the front window.
+
+Souvenir.
+
+She bought a small souvenir at the airport.
+
+Artifact.
+
+The museum has ancient artifacts on display.
+
+Material.
+
+What material is this jacket made of?
+
+Raw.
+
+The factory needs raw materials to start production.
+
+Crude.
+
+Crude oil prices went up again this week.
+
+That was a rather crude joke to tell in front of the kids.
+
+Necessity.
+
+A good pair of shoes is a necessity for hiking.
+
+Outfit.
+
+She bought a new outfit for the job interview.
+
+Kit.
+
+He always keeps a first aid kit in his car.
+
+Utensil.
+
+She bought a set of cooking utensils for her new home.
+
+Garbage.
+
+Please take out the garbage before you go to bed.
+
+Rubbish.
+
+Don't leave rubbish on the floor — use the bin.
+
+Trash.
+
+She threw the empty bottle in the trash.
+
+Recycle.
+
+We recycle paper, glass, and plastic at home.
+
+Reuse.
+
+She reuses shopping bags instead of buying new ones.
+
+Litter.
+
+Don't litter — find a bin.
+
+Waste.
+
+Try not to waste food — only cook what you need.
+
+Junk.
+
+He loves junk food but tries to eat less of it.
+
+Landfill.
+
+Too much waste ends up in landfill every year.
+
+Sewerage.
+
+A blocked sewerage pipe caused a bad smell outside.
+
+Detergent.
+
+She uses eco-friendly detergent for the dishes.
+
+Lotion.
+
+She puts lotion on her hands after washing them.
+
+Shampoo.
+
+He ran out of shampoo and had to use soap.
+
+Soap.
+
+Wash your hands with soap for at least twenty seconds.
+
+Tub.
+
+She soaked in the tub for half an hour.
+
+He bought a large tub of ice cream for the party.
+
+Plug.
+
+Don't forget to plug in the charger before you sleep.
+
+The author was clearly trying to plug her new book.
+
+Tap.
+
+She left the tap running and wasted a lot of water.
+
+He tapped her gently on the shoulder to get her attention.
+
+Pipe.
+
+The water pipe burst and flooded the bathroom.
+
+The old man lit his pipe and sat by the fire.
+
+Tube.
+
+She squeezed the last bit out of the toothpaste tube.
+
+Mop.
+
+He mopped the kitchen floor after cooking.
+
+Broom.
+
+She swept the porch with a broom.
+
+Sweep.
+
+Please sweep the floor before the guests arrive.
+
+Mattress.
+
+She bought a new mattress because her back was sore.
+
+Carpet.
+
+The kids spilled juice on the carpet.
+
+Rug.
+
+She put a small rug beside the bed.
+
+Mat.
+
+Wipe your feet on the mat before coming in.
+
+Cushion.
+
+She added a few cushions to make the sofa more comfortable.
+
+Pad.
+
+She kept a notepad by the phone to write things down.
+
+Blanket.
+
+He wrapped himself in a blanket on the cold night.
+
+Quilt.
+
+Grandma made a patchwork quilt for the baby.
+
+Sheet.
+
+She changed the bed sheets this morning.
+
+Pillow.
+
+She flipped her pillow to the cool side.
+
+Sponge.
+
+She used a sponge to clean the bathroom tiles.
+
+Towel.
+
+He grabbed a towel after getting out of the shower.
+
+Staple.
+
+She used a stapler to attach the papers together.
+
+Nail.
+
+He hammered a nail into the wall to hang the clock.
+
+Razor.
+
+He bought a new razor at the pharmacy.
+
+Shave.
+
+He shaves every morning before breakfast.
+
+Fuse.
+
+The fuse blew and all the lights went out.
+
+Cable.
+
+She tripped over the cable on the floor.
+
+Chord.
+
+He strummed a simple chord on the guitar.
+
+Strand.
+
+A strand of hair fell across her face.
+
+Match.
+
+She lit the candle with a match.
+
+They watched the football match on TV last night.
+
+Candle.
+
+The power went out and she lit a candle.
+
+Wax.
+
+The candle dripped wax onto the table.
+
+Portfolio.
+
+She brought her portfolio to the design interview.
+
+Paperback.
+
+He always reads a paperback on long train rides.
+
+Pamphlet.
+
+She picked up a pamphlet about the local attractions.
+
+Tissue.
+
+She grabbed a tissue when she started to sneeze.
+
+Cover.
+
+The book cover is torn — it needs a new one.
+
+They covered the leftovers before putting them in the fridge.
+
+Xerox.
+
+He made a Xerox of his passport for the form.
+
+Duplicate.
+
+She made a duplicate key for her neighbor.
+
+Memorandum.
+
+The manager sent a memorandum to all staff.
+
+Stationary.
+
+She ordered new stationary for the office.
+
+Glue.
+
+He used glue to fix the broken handle.
+
+Ink.
+
+The printer ran out of ink again.
+
+Rubber.
+
+He erased the mistake with a rubber.
+
+Scissors.
+
+She used scissors to cut the wrapping paper.
+
+Shear.
+
+He sheared the hedge into a neat shape.
+
+Edge.
+
+Be careful near the edge of the platform.
+
+Rim.
+
+The rim of the cup is chipped.
+
+Element.
+
+Water is made up of two elements — hydrogen and oxygen.
+
+There was an element of surprise in her sudden visit.
+
+Factor.
+
+Good sleep is an important factor in staying healthy.
+
+Section.
+
+This section of the road is under repair.
+
+Tag.
+
+She checked the price tag before buying the dress.
+
+Label.
+
+Always read the label before taking any medicine.
+
+Some people are too quick to label others as lazy.
+
+Badge.
+
+Every staff member wears a name badge at work.
+
+Bolt.
+
+He tightened the bolt with a wrench.
+
+The horse bolted the moment it heard the loud noise.
+
+Knob.
+
+She turned the knob and opened the door slowly.
+
+Handle.
+
+The handle on the frying pan is getting loose.
+
+She handled the difficult customer very calmly.
+
+Shutter.
+
+She closed the shutters to block out the sun.
+
+Curtain.
+
+She drew the curtains to keep the room dark.
+
+Pane.
+
+A football hit the window and cracked the pane of glass.
+
+Opacity.
+
+She chose frosted glass for the bathroom for opacity.
+
+Jar.
+
+She opened a jar of peanut butter for breakfast.
+
+The sudden noise jarred her out of her thoughts.
+
+Barrel.
+
+The wine was stored in a wooden barrel.
+
+Bucket.
+
+She filled a bucket with soapy water to mop the floor.
+
+Pail.
+
+He carried a pail of water from the well.
+
+Phone.
+
+She forgot her phone at home today.
+
+Bell.
+
+The bell rang and all the students rushed out.
+
+Camera.
+
+She brought her camera to take photos at the park.
+
+Portable.
+
+He bought a portable speaker for outdoor use.
+
+Spotlight.
+
+The spotlight shone on the singer on stage.
+
+Lantern.
+
+They hung paper lanterns outside for the festival.
+
+Bulb.
+
+The bulb in the bedroom needs to be replaced.
+
+She planted a tulip bulb in the garden last autumn.
+
+Flashlight.
+
+He used a flashlight to find his way in the dark.
+
+Refrigerator.
+
+Put the leftovers in the refrigerator.
+
+Fridge.
+
+Can you check if there are any eggs in the fridge?
+
+Vacuum.
+
+She vacuumed the carpet after the party.
+
+Fan.
+
+She turned on the fan because the room was too hot.
+
+Switch.
+
+He flipped the switch and the lights came on.
+
+She switched jobs after five years at the company.
+
+Hurdle.
+
+Every new project has its own hurdles to overcome.
+
+She won the two-hundred-meter hurdles at the school meet.
+
+Fence.
+
+They built a fence around the garden to keep out the dog.
+
+He took up fencing as a hobby last year.
+
+Pedal.
+
+He pressed the pedal and the car moved forward.
+
+Shelf.
+
+The books fell off the shelf when the door slammed.
+
+Ladder.
+
+He climbed the ladder to change the light bulb.
+
+Lift.
+
+Can you help me lift this heavy box?
+
+Take the lift to the fourth floor.
+
+Stool.
+
+She sat on a stool at the kitchen counter.
+
+Drawer.
+
+The scissors are in the top drawer on the left.
+
+Umbrella.
+
+She grabbed her umbrella before heading out in the rain.
+
+Raincoat.
+
+You should bring a raincoat — it might rain later.
+
+Dredge.
+
+She dredged flour over the chicken before frying it.
+
+Can.
+
+She opened a can of tomatoes for the pasta sauce.
+
+Mill.
+
+They visited an old windmill in the countryside.
+
+Forge.
+
+The blacksmith forged a hook from iron.
+
+He was caught trying to forge his father's signature.
+
+Alloy.
+
+The frame is made from a lightweight alloy.
+
+Metal.
+
+The gate is made of metal and painted black.
+
+Iron.
+
+She used an iron to press her shirt before the meeting.
+
+The gate is made of solid iron.
+
+Lead.
+
+Lead pipes in old houses can be a health risk.
+
+She was chosen to lead the new project.
+
+The runner took the lead in the final lap.
+
+Brass.
+
+The door handles are made of polished brass.
+
+Bronze.
+
+She won a bronze medal at the swimming competition.
+
+Cement.
+
+Workers mixed cement to lay the foundation.
+
+Pitch.
+
+The road was sealed with tar and pitch.
+
+The players ran onto the pitch before kickoff.
+
+Lime.
+
+She added lime to the soil in the garden.
+
+Plaster.
+
+He put a plaster on the small cut on his finger.
+
+Leather.
+
+His leather wallet has lasted over ten years.
+
+Plastic.
+
+Reduce your use of single-use plastic bags.
+
+Fiber.
+
+Eat more vegetables and grains for fiber.
+
+Fabric.
+
+This shirt is made from a light and breathable fabric.
+
+Knit.
+
+She knitted a scarf for her daughter last winter.
+
+Weave.
+
+The basket was woven from dried grass.
+
+He wove his way through the crowded market.
+
+Canvas.
+
+She painted on a large canvas in her studio.
+
+Linen.
+
+She bought a set of linen bedsheets.
+
+Cotton.
+
+She prefers cotton clothes because they are comfortable.
+
+Nylon.
+
+The tent is made of lightweight nylon.
+
+Lumber.
+
+They used lumber to build the new deck.
+
+Wooden.
+
+There is a wooden bench at the park entrance.
+
+Mine.
+
+Coal is extracted from the mine.
+
+This umbrella is mine, not yours.
+
+Pit.
+
+He dug a small pit in the garden to plant the tree.
+
+She spat out the cherry pit onto her plate.
+
+Fuel.
+
+The car is almost out of fuel.
+
+His comments only fueled the argument further.
+
+Lubricate.
+
+Lubricate the bike chain to keep it running smoothly.
+
+Diamond.
+
+She received a diamond ring for her anniversary.
+
+Crystal.
+
+The vase is made of fine crystal.
+
+Inferior.
+
+The cheap brand is clearly inferior to the original.
+
+Counterfeit.
+
+He was caught selling counterfeit goods online.
+
+Fake.
+
+The painting turned out to be a fake.
+
+Fragile.
+
+Handle this package with care — it's fragile.
+
+Miniature.
+
+She collects miniature furniture for her dollhouse.
+
+Available.
+
+The product is available in three different colors.
+
+Durable.
+
+This brand is known for making durable outdoor gear.

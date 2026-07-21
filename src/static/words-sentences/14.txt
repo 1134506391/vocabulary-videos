@@ -1,0 +1,599 @@
+Navigate.
+
+She navigated through the busy city streets easily.
+
+Voyage.
+
+The voyage took three weeks across the ocean.
+
+Aviation.
+
+He has always dreamed of working in aviation.
+
+Journey.
+
+The journey by train takes about two hours.
+
+Travel.
+
+She loves to travel during the long holidays.
+
+Safari.
+
+They went on a safari and saw wild elephants.
+
+Parade.
+
+The kids loved watching the holiday parade.
+
+Haunt.
+
+That old café is my favorite haunt on weekends.
+
+The memory of that mistake still haunts him.
+
+Attraction.
+
+The zoo is the top attraction for families here.
+
+Memorial.
+
+A memorial was built to honor the fallen soldiers.
+
+Pyramid.
+
+The pyramids of Egypt attract millions of tourists.
+
+Port.
+
+The ship arrived at the port early in the morning.
+
+Visa.
+
+I need to apply for a visa before the trip.
+
+Traffic.
+
+The traffic was terrible during rush hour today.
+
+Police caught him trafficking illegal goods across the border.
+
+Airline.
+
+The airline offers cheap tickets for early bookings.
+
+Airplane.
+
+The airplane landed smoothly despite the strong wind.
+
+Helicopter.
+
+A helicopter flew over the city during the event.
+
+Jet.
+
+The jet took off and disappeared into the clouds.
+
+Parachute.
+
+The skydiver opened his parachute at the right moment.
+
+Flight.
+
+My flight leaves at seven in the morning.
+
+Pilot.
+
+The pilot announced we would land in thirty minutes.
+
+Passenger.
+
+Each passenger is allowed one carry-on bag.
+
+Baggage.
+
+Please collect your baggage at belt number three.
+
+Luggage.
+
+He struggled to carry all his luggage alone.
+
+Suitcase.
+
+Her suitcase was too heavy to lift.
+
+Carry-on.
+
+Make sure your carry-on fits in the overhead compartment.
+
+Rack.
+
+He placed his bag on the overhead rack.
+
+Freight.
+
+The goods were sent by air freight.
+
+Fare.
+
+The bus fare has gone up again this month.
+
+He fared quite well in his first job interview.
+
+Atlas.
+
+She checked the atlas to find the country's location.
+
+Route.
+
+We took a different route to avoid the traffic.
+
+Itinerary.
+
+Our tour itinerary includes three cities in five days.
+
+Passage.
+
+The narrow passage between the buildings was dark.
+
+She read a short passage from the novel aloud.
+
+Intersection.
+
+Turn left at the next intersection.
+
+Cross.
+
+Look both ways before you cross the road.
+
+He seemed a little cross after waiting so long.
+
+Way.
+
+Excuse me, which way is the train station?
+
+She has her own way of solving problems.
+
+Path.
+
+We followed the path through the forest.
+
+Lane.
+
+Stay in your lane on the highway.
+
+Avenue.
+
+They strolled down the tree-lined avenue.
+
+Highway.
+
+We drove on the highway for three hours.
+
+Curb.
+
+He parked right next to the curb.
+
+Try to curb your spending before the holidays.
+
+Signpost.
+
+Follow the signpost to reach the car park.
+
+Pave.
+
+The new road was paved last week.
+
+Vehicle.
+
+No vehicles are allowed in this area on weekends.
+
+Auto.
+
+He works at an auto repair shop.
+
+Express.
+
+We caught the express train and saved an hour.
+
+It's healthy to express your feelings honestly.
+
+Tram.
+
+She took the tram to the city center.
+
+Coach.
+
+We traveled to the capital by coach overnight.
+
+Her tennis coach helped her improve her serve.
+
+Ambulance.
+
+The ambulance arrived within five minutes.
+
+Truck.
+
+The truck delivered the furniture early this morning.
+
+Lorry.
+
+A heavy lorry blocked the road for an hour.
+
+Van.
+
+The moving van arrived at eight in the morning.
+
+Wagon.
+
+The children rode in a little red wagon.
+
+Carriage.
+
+The baby was sleeping peacefully in the carriage.
+
+Tractor.
+
+The farmer drove his tractor across the field.
+
+Cart.
+
+She pushed the shopping cart around the supermarket.
+
+Pedicab.
+
+They rode a pedicab through the old town.
+
+Cycle.
+
+He cycles to work every day to stay fit.
+
+The moon goes through a full cycle every month.
+
+Garage.
+
+The car is in the garage for repairs.
+
+Motor.
+
+The motor on the boat stopped working suddenly.
+
+Horsepower.
+
+This car has a very powerful engine.
+
+Wheel.
+
+He gripped the steering wheel tightly in the rain.
+
+Brake.
+
+She hit the brake just in time to avoid the cat.
+
+Tyre.
+
+One of the tyres went flat on the way home.
+
+Honk.
+
+He honked to warn the cyclist ahead.
+
+Crew.
+
+The flight crew welcomed all passengers on board.
+
+Captain.
+
+The captain announced a slight delay due to weather.
+
+She was named captain of the school football team.
+
+Steward.
+
+The steward brought drinks to all the passengers.
+
+Emergency.
+
+In an emergency, call the number on the door.
+
+Wreck.
+
+The old car was just a wreck by the roadside.
+
+His careless spending nearly wrecked the family business.
+
+Crash.
+
+There was a crash on the highway this morning.
+
+He often crashes at his friend's place after a late night.
+
+Stock markets around the world crashed that morning.
+
+Crush.
+
+There was a big crush at the entrance to the stadium.
+
+She has had a crush on him since high school.
+
+Dash.
+
+She dashed to the gate just before it closed.
+
+Use a dash instead of a comma in this sentence.
+
+Vanish.
+
+The magician made the coin vanish instantly.
+
+Disappear.
+
+My keys seem to disappear every morning.
+
+Hazard.
+
+Icy roads are a serious hazard in winter.
+
+I'd hazard a guess that the meeting will run late.
+
+Harbour.
+
+We sat by the harbour and watched the boats.
+
+Dock.
+
+The boat pulled into the dock safely.
+
+Anchor.
+
+They dropped anchor and went for a swim.
+
+She has worked as a news anchor for over ten years.
+
+Submerge.
+
+The road was submerged after the heavy rain.
+
+Sailor.
+
+The sailor waved goodbye as the ship left port.
+
+Seaman.
+
+He worked as a seaman for over ten years.
+
+Carrier.
+
+The airline is a major international carrier.
+
+He was found to be a carrier of the virus, though he had no symptoms.
+
+Steamer.
+
+The old steamer crossed the river slowly.
+
+Liner.
+
+The luxury liner carried two thousand passengers.
+
+Vessel.
+
+A small vessel was spotted near the coast.
+
+Blood flows through vessels all over the body.
+
+Ferry.
+
+We took the ferry to the island.
+
+Buses ferry students between the two campuses every day.
+
+Sail.
+
+We set sail early in the morning.
+
+Raft.
+
+The kids built a small raft out of wood.
+
+Canoe.
+
+They paddled a canoe down the quiet river.
+
+Oar.
+
+She dipped her oar into the calm water.
+
+Deck.
+
+We sat on the deck and enjoyed the sea breeze.
+
+He shuffled the deck of cards before dealing.
+
+Turbine.
+
+The wind turbine generates electricity for the village.
+
+Propeller.
+
+The propeller started spinning as the boat moved.
+
+Stern.
+
+He stood at the stern and watched the shore disappear.
+
+The teacher gave him a stern warning about being late.
+
+Aboard.
+
+Welcome aboard — please find your seat.
+
+Embark.
+
+They embarked on the cruise ship at noon.
+
+Channel.
+
+The ferry crosses the channel in about ninety minutes.
+
+She switched the TV to a different channel.
+
+Canal.
+
+A small boat drifted slowly along the canal.
+
+Ditch.
+
+The car slid off the road and into a ditch.
+
+They decided to ditch the original plan at the last minute.
+
+Railroad.
+
+The new railroad connects the two major cities.
+
+Railway.
+
+The railway station is just a ten-minute walk away.
+
+Locomotive.
+
+Children always love to look at old locomotives.
+
+Subway.
+
+She takes the subway to work every morning.
+
+Underground.
+
+The underground car park is free on weekends.
+
+Tunnel.
+
+The train went through the tunnel at high speed.
+
+Rail.
+
+He held the rail carefully as he climbed the stairs.
+
+Depart.
+
+The train departs at eight sharp — don't be late.
+
+Arrive.
+
+We arrived at the hotel just before midnight.
+
+Destination.
+
+We finally reached our destination after six hours.
+
+Delay.
+
+The flight delay was caused by bad weather.
+
+Postpone.
+
+The match was postponed to next week.
+
+Defer.
+
+They deferred the trip due to a family emergency.
+
+Lull.
+
+The gentle rocking of the boat lulled her to sleep.
+
+Expire.
+
+My driving license is about to expire.
+
+Due.
+
+The library book is due back tomorrow.
+
+The delay was due to bad weather.
+
+Postage.
+
+How much is the postage for this parcel?
+
+Stamp.
+
+She stuck a stamp on the envelope and posted it.
+
+He stamped his feet to warm up in the cold.
+
+Envelope.
+
+She sealed the envelope and put it in the mailbox.
+
+Mail.
+
+I'll mail the package to you tomorrow.
+
+Packet.
+
+She bought a packet of biscuits at the shop.
+
+Package.
+
+A package arrived for you this morning.
+
+The company offered him a generous benefits package.
+
+Bind.
+
+Use a rubber band to bind the papers together.
+
+The contract is legally binding for both parties.
+
+Parcel.
+
+She wrapped the gift as a parcel to post.
+
+Load.
+
+He loaded the bags into the back of the car.
+
+She has a load of homework to finish tonight.
+
+Burden.
+
+Don't let the workload become a burden to you.
+
+Transfer.
+
+She transferred to a different school last year.
+
+He made the transfer using his online banking app.
+
+Transmit.
+
+The signal is transmitted from the tower nearby.
+
+Transit.
+
+Passengers in transit must stay in the lounge.
+
+Deliver.
+
+The pizza was delivered in under thirty minutes.
+
+He always delivers on his promises.
+
+Convey.
+
+It's hard to convey how grateful I am.
+
+Speed.
+
+Slow down — you're driving well over the speed limit.
+
+Velocity.
+
+The ball hit the wall at a very high velocity.
+
+Swift.
+
+She made a swift decision and left immediately.

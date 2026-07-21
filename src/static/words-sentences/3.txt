@@ -1,0 +1,717 @@
+Biologist.
+
+The biologist studied the behavior of fish in the river.
+
+Zoologist.
+
+The zoologist spent years observing wild animals in Africa.
+
+Ecologist.
+
+The ecologist warned that cutting down trees harms wildlife.
+
+Botanist.
+
+The botanist discovered a new species of plant in the forest.
+
+Mammal.
+
+A dog is a mammal, just like humans.
+
+Primate.
+
+Chimpanzees are primates with very high intelligence.
+
+Vertebrate.
+
+Fish, birds, and cats are all vertebrates.
+
+Reptile.
+
+The lizard is a common reptile found in warm regions.
+
+Amphibian.
+
+A frog is an amphibian that can live on land and in water.
+
+Carnivore.
+
+Cats are natural carnivores that eat meat.
+
+Herbivore.
+
+Rabbits are herbivores that only eat plants.
+
+Creature.
+
+The spider is a fascinating little creature.
+
+Wildlife.
+
+The national park is home to a rich variety of wildlife.
+
+Fauna.
+
+The island has a unique fauna found nowhere else.
+
+Flora.
+
+The tropical rainforest has an incredible variety of flora.
+
+Species.
+
+Several species of birds visit our garden every spring.
+
+Flock.
+
+A flock of birds flew over the house this morning.
+
+Herd.
+
+A herd of cows grazed peacefully in the field.
+
+Swarm.
+
+A swarm of bees flew out of the old tree trunk.
+
+Throng.
+
+A throng of people gathered outside the stadium.
+
+Crowd.
+
+A crowd of children ran out of the school gate.
+
+Beast.
+
+The dog turned into a fierce beast when threatened.
+
+Brute.
+
+He felt like a brute after shouting at the child.
+
+Cruel.
+
+It is cruel to leave a dog outside in cold weather.
+
+Originate.
+
+This custom originated in ancient China.
+
+Derive.
+
+She derives great joy from reading and gardening.
+
+Stem.
+
+His fear of dogs stems from a bad experience as a child.
+
+She trimmed the flower's stem before putting it in the vase.
+
+Ancestor.
+
+Wolves and dogs share a common ancestor.
+
+Descendant.
+
+She is a descendant of a famous painter.
+
+Offspring.
+
+The cat and her offspring all have white fur.
+
+Subgroup.
+
+The researchers divided the participants into subgroups.
+
+Feed.
+
+She feeds the stray cats in the alley every evening.
+
+Breed.
+
+They breed golden retrievers at the farm.
+
+Interbreed.
+
+Some species interbreed when they share the same habitat.
+
+Hybridize.
+
+Scientists hybridized two types of corn to improve the yield.
+
+Proliferate.
+
+Weeds proliferate quickly in wet weather.
+
+Sterility.
+
+The drought caused sterility in much of the farmland.
+
+Mate.
+
+Many birds mate for life.
+
+Courtship.
+
+The peacock does an elaborate courtship dance to attract females.
+
+Lay.
+
+The hen laid three eggs this morning.
+
+Hatch.
+
+The eggs hatched after about three weeks.
+
+Brood.
+
+The mother bird sat on her brood to keep them warm.
+
+Spawn.
+
+Salmon swim upstream to spawn.
+
+Mature.
+
+She has become much more mature since starting university.
+
+Skin.
+
+He slipped and broke the skin on his knee.
+
+Peel the skin off the potato before boiling it.
+
+Claw.
+
+The cat scratched the sofa with its claw.
+
+The crab clawed at the bucket, trying to escape.
+
+Paw.
+
+The dog lifted its paw to shake hands.
+
+Beak.
+
+The bird cracked the seed open with its beak.
+
+Fin.
+
+The shark's fin cut through the water.
+
+Wing.
+
+The bird spread its wings and flew away.
+
+The hospital's new wing was opened last month.
+
+Plume.
+
+The peacock spread its beautiful plume in the sun.
+
+Feather.
+
+A single feather floated down from the tree.
+
+Fur.
+
+The puppy has soft white fur.
+
+Bristle.
+
+The toothbrush has firm bristles.
+
+Curl.
+
+The puppy's tail curled up when it was happy.
+
+Insect.
+
+A flying insect kept buzzing around the room.
+
+Worm.
+
+The bird pulled a worm out of the ground.
+
+Pest.
+
+Aphids are a common pest in gardens.
+
+Parasite.
+
+The vet found a parasite in the dog's fur.
+
+Spider.
+
+A small spider made a web in the corner of the window.
+
+Butterfly.
+
+A yellow butterfly landed on the flower.
+
+Mosquito.
+
+A mosquito bit her arm and left a red mark.
+
+Cricket.
+
+She fell asleep to the sound of crickets outside.
+
+Our school team won the cricket match last weekend.
+
+Penguin.
+
+Penguins waddle in a very cute way.
+
+Seal.
+
+The seal lay on the rock, sunbathing.
+
+She sealed the envelope before mailing the letter.
+
+Tortoise.
+
+The old tortoise moved slowly across the garden.
+
+Turtle.
+
+We saw a sea turtle swimming near the shore.
+
+Whale.
+
+The whale surfaced and blew water into the air.
+
+Kangaroo.
+
+The kangaroo jumped over the fence easily.
+
+Camel.
+
+A camel can survive for days without water.
+
+Panda.
+
+The panda sat and quietly munched on bamboo.
+
+Elephant.
+
+The elephant sprayed water on its back to cool down.
+
+Trunk.
+
+The elephant picked up a branch with its trunk.
+
+He packed all the luggage into the car trunk.
+
+Ivory.
+
+Ivory trade has been banned to protect elephants.
+
+Horn.
+
+The rhino's horn is very sharp and powerful.
+
+The driver honked his horn to warn the cyclist.
+
+Bear.
+
+We spotted a large brown bear near the trail.
+
+She could hardly bear the pain in her knee.
+
+Wolf.
+
+The wolf howled in the forest at night.
+
+He wolfed down his lunch in five minutes flat.
+
+Dragon.
+
+The children dressed up as dragons for the festival.
+
+Fox.
+
+A fox came into the garden and stole a chicken.
+
+Cub.
+
+The bear cub stayed close to its mother.
+
+Calf.
+
+The little calf stood up for the first time today.
+
+He pulled a muscle in his calf during the race.
+
+Pup.
+
+The dog gave birth to five pups last night.
+
+Lamb.
+
+A newborn lamb was wobbling around in the field.
+
+Cattle.
+
+The farmer keeps a small herd of cattle.
+
+Ox.
+
+An ox was used to pull the plow through the field.
+
+Bull.
+
+The bull ran across the field toward the fence.
+
+Buffalo.
+
+We saw a herd of buffalo on the safari.
+
+Horse.
+
+She goes horse riding every Saturday morning.
+
+Zebra.
+
+Zebras have a striking pattern of black and white stripes.
+
+Donkey.
+
+The donkey carried heavy loads up the mountain path.
+
+Saddle.
+
+He put a saddle on the horse before riding.
+
+Harness.
+
+The farmer fitted the horse with a harness.
+
+Falcon.
+
+The falcon swooped down and caught the mouse.
+
+Hawk.
+
+A hawk circled high above the field.
+
+Eagle.
+
+An eagle soared over the mountains.
+
+Owl.
+
+An owl hooted from the tree outside the window.
+
+Swallow.
+
+A pair of swallows built a nest under the roof.
+
+Take a sip of water to help swallow the pill.
+
+Sparrow.
+
+A little sparrow pecked at crumbs on the balcony.
+
+Pigeon.
+
+Pigeons gathered in the square looking for food.
+
+Crow.
+
+A crow perched on the fence and watched us eat.
+
+Swan.
+
+A graceful swan glided across the lake.
+
+Goose.
+
+A goose waddled across the path and blocked our way.
+
+Cock.
+
+The cock crowed at dawn and woke everyone up.
+
+Mouse.
+
+A mouse ran across the kitchen floor.
+
+She clicked the mouse to open the file.
+
+Rat.
+
+The landlord called pest control to deal with the rats.
+
+Squirrel.
+
+A squirrel ran up the tree with a nut in its mouth.
+
+Hare.
+
+The hare ran so fast we could barely see it.
+
+Frog.
+
+A tiny frog jumped into the pond with a splash.
+
+Behavior.
+
+The teacher noticed some unusual behavior in the class.
+
+Bite.
+
+A bee bit him on the arm while gardening.
+
+She just wanted a quick bite before the movie.
+
+Sting.
+
+A wasp stung her finger at the picnic.
+
+His harsh comment really stung her.
+
+Bark.
+
+The dog barked loudly when the doorbell rang.
+
+The bark of the old oak tree was rough and grey.
+
+Roar.
+
+The lion's roar echoed through the valley.
+
+Rub.
+
+The cat rubbed its head against her leg.
+
+Creep.
+
+The cat crept silently through the long grass.
+
+Crawl.
+
+The baby started to crawl at seven months.
+
+Habitat.
+
+The rainforest is the natural habitat of many rare animals.
+
+Nest.
+
+The birds built their nest in the old oak tree.
+
+Hive.
+
+Thousands of bees live together in a hive.
+
+Cell.
+
+Each bee has its own small cell in the hive.
+
+The human body is made up of trillions of cells.
+
+He spent three years in a small prison cell.
+
+Cage.
+
+The parrot sat quietly in its cage.
+
+Stable.
+
+She cleaned out the horse's stable every morning.
+
+His job gives him a stable income every month.
+
+Barn.
+
+The farmer stored hay in the old wooden barn.
+
+Hedge.
+
+They planted a hedge along the front of the garden.
+
+Barrier.
+
+The river acts as a natural barrier between the two areas.
+
+Bar.
+
+He put a chocolate bar in his son's lunchbox.
+
+They met for a drink at the bar after work.
+
+Anatomy.
+
+She studied anatomy to understand how the body works.
+
+Epidemic.
+
+A flu epidemic spread through the school in winter.
+
+Gene.
+
+Eye color is determined by your genes.
+
+Germ.
+
+Wash your hands to remove germs before eating.
+
+Bacteria.
+
+Some bacteria are helpful and some are harmful.
+
+Virus.
+
+The virus spread quickly through the office.
+
+Microbe.
+
+Some microbes help us digest food properly.
+
+Metabolism.
+
+Regular exercise can boost your metabolism.
+
+Protein.
+
+Eggs and beans are good sources of protein.
+
+Vitamin.
+
+She takes a vitamin C supplement every morning.
+
+Secrete.
+
+The skin secretes oil to keep it moisturized.
+
+Excrete.
+
+The body excretes waste through sweat and urine.
+
+Devour.
+
+The hungry dog devoured its food in seconds.
+
+Instinct.
+
+Her instinct told her something was wrong.
+
+Intuitive.
+
+She has an intuitive sense for what her clients need.
+
+Potential.
+
+Every child has the potential to succeed.
+
+Intelligence.
+
+Emotional intelligence is just as important as IQ.
+
+Functional.
+
+The old car is not beautiful but it is fully functional.
+
+Sensitive.
+
+She is sensitive to criticism and takes it personally.
+
+Flexible.
+
+Our plans are flexible — we can change if needed.
+
+Acoustic.
+
+The acoustic guitar has a warm and natural sound.
+
+Optical.
+
+He went for an optical check-up and got new glasses.
+
+Nocturnal.
+
+Owls are nocturnal and hunt at night.
+
+Dormant.
+
+The volcano has been dormant for over a hundred years.
+
+Hibernation.
+
+Bears go into hibernation during the cold winter months.
+
+Track.
+
+The dog tracked the fox through the muddy field.
+
+They walked along the running track after school.
+
+Trace.
+
+Police traced the call to a house nearby.
+
+There wasn't a trace of dust anywhere in the room.
+
+Alternate.
+
+She alternates between running and cycling each day.
+
+We had to take an alternate route because of the roadwork.
+
+Prey.
+
+The hawk watches its prey before diving.
+
+Predator.
+
+The deer ran from the predator as fast as it could.
+
+Victim.
+
+The victim was taken to hospital immediately.
+
+Captive.
+
+The injured eagle was kept captive until it recovered.
+
+Defensive.
+
+He got defensive when she pointed out his mistake.
+
+Undergo.
+
+She had to undergo a minor operation on her knee.
+
+Suffer.
+
+He suffered a bad cold for over a week.
+
+Vulnerable.
+
+Young children are vulnerable to colds and infections.
+
+Subsistence.
+
+The family grew vegetables for subsistence during hard times.
+
+Exist.
+
+Many rare animals still exist only in protected reserves.
+
+Exterminate.
+
+Pest control was called in to exterminate the ants.
+
+Tame.
+
+The rabbit is very tame and lets you hold it easily.
+
+Keeper.
+
+The zoo keeper fed the giraffes every morning.
+
+Shepherd.
+
+The shepherd guided the sheep back to the farm.

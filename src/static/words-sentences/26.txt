@@ -1,0 +1,827 @@
+Frontend
+
+Frontend developers focus on user interfaces and interactions.
+
+Backend
+
+Backend systems handle business logic and databases.
+
+Full-stack
+
+Full-stack engineers understand both frontend and backend development.
+
+Framework
+
+Vue is a popular JavaScript framework.
+
+Library
+
+React is often described as a UI library.
+
+Component
+
+Reusable components improve development efficiency.
+
+Module
+
+Each module should have a clear responsibility.
+
+Package
+
+The package contains useful utility functions.
+
+Dependency
+
+Too many dependencies can increase project complexity.
+
+Plugin
+
+The plugin adds extra features to the editor.
+
+Extension
+
+Browser extensions improve productivity.
+
+Architecture
+
+Good software architecture supports scalability.
+
+Pattern
+
+The observer pattern is widely used in frontend development.
+
+Template
+
+This template simplifies page creation.
+
+Boilerplate
+
+Developers often use boilerplate code for new projects.
+
+Syntax
+
+JavaScript syntax is relatively flexible.
+
+Variable
+
+Variables store temporary data.
+
+Constant
+
+Constants should not be modified.
+
+Function
+
+Functions help organize reusable logic.
+
+Parameter
+
+This function accepts two parameters.
+
+Argument
+
+The method requires several arguments.
+
+Return
+
+The API returns data in JSON format.
+
+Condition
+
+Conditional statements control program flow.
+
+Loop
+
+Loops reduce repetitive code.
+
+Iteration
+
+Each iteration processes one item.
+
+Array
+
+Arrays store multiple values.
+
+Object
+
+Objects contain key-value pairs.
+
+Property
+
+The object property stores user information.
+
+Method
+
+The method updates the database record.
+
+Class
+
+Classes support object-oriented programming.
+
+Every student in the class received a certificate.
+
+Instance
+
+Each instance has its own state.
+
+Inheritance
+
+Inheritance improves code reusability.
+
+Encapsulation
+
+Encapsulation protects internal data.
+
+Polymorphism
+
+Polymorphism simplifies complex systems.
+
+Abstraction
+
+Abstraction hides unnecessary details.
+
+Interface
+
+Interfaces define method structures.
+
+Algorithm
+
+Efficient algorithms improve performance.
+
+Data structure
+
+Choosing the right data structure is important.
+
+Stack
+
+The browser stores function calls in the stack.
+
+There was a huge stack of dishes waiting to be washed.
+
+Queue
+
+Tasks are processed in a queue.
+
+Heap
+
+Objects are allocated in heap memory.
+
+Recursion
+
+Recursion can simplify tree traversal.
+
+Complexity
+
+Time complexity affects application performance.
+
+Optimization
+
+Code optimization reduces loading time.
+
+Performance
+
+Poor performance frustrates users.
+
+Memory
+
+Memory usage should be monitored carefully.
+
+Leak
+
+Memory leaks cause applications to crash.
+
+Thread
+
+Threads allow concurrent execution.
+
+Process
+
+Each process runs independently.
+
+Concurrency
+
+Concurrency improves server efficiency.
+
+Parallelism
+
+Parallelism speeds up computation.
+
+Asynchronous
+
+JavaScript supports asynchronous programming.
+
+Promise
+
+Promises simplify asynchronous code.
+
+Callback
+
+Nested callbacks reduce readability.
+
+Event loop
+
+The event loop handles asynchronous tasks.
+
+Runtime
+
+Node.js provides a JavaScript runtime.
+
+Compiler
+
+The compiler converts source code into machine code.
+
+Interpreter
+
+Python uses an interpreter.
+
+Execution
+
+The code execution failed unexpectedly.
+
+Debugging
+
+Debugging requires patience and attention.
+
+Breakpoint
+
+Breakpoints help inspect variables.
+
+Console
+
+The console displayed several warnings.
+
+He plugged in his game console after dinner.
+
+Log
+
+Logs help developers identify issues.
+
+Error
+
+The application threw a runtime error.
+
+Exception
+
+Exceptions should be handled properly.
+
+Bug
+
+The update introduced a critical bug.
+
+A bug crawled slowly across the kitchen floor.
+
+Patch
+
+The company released a security patch.
+
+Fix
+
+The developer fixed the issue quickly.
+
+Refactor
+
+Refactoring improves code readability.
+
+Maintainability
+
+Maintainability is important in large projects.
+
+Readability
+
+Readable code improves collaboration.
+
+Scalability
+
+Cloud systems require scalability.
+
+Reliability
+
+System reliability affects user trust.
+
+Availability
+
+High availability minimizes downtime.
+
+Deployment
+
+The deployment process was automated.
+
+Build
+
+The build failed because of missing dependencies.
+
+Compilation
+
+Compilation took several minutes.
+
+Bundler
+
+Webpack is a popular bundler.
+
+Transpiler
+
+Babel is commonly used as a transpiler.
+
+Minification
+
+Minification reduces file size.
+
+Compression
+
+Compression improves loading speed.
+
+Cache
+
+Caching reduces server requests.
+
+Cookie
+
+Cookies store user preferences.
+
+Session
+
+The session expired after inactivity.
+
+Authentication
+
+Authentication verifies user identity.
+
+Authorization
+
+Authorization controls access permissions.
+
+Encryption
+
+Encryption protects sensitive data.
+
+Hashing
+
+Passwords should be stored using hashing.
+
+Security
+
+Web security is extremely important.
+
+Vulnerability
+
+Hackers exploited a system vulnerability.
+
+Firewall
+
+The firewall blocked suspicious traffic.
+
+Attack
+
+The website suffered a cyber attack.
+
+Malware
+
+Malware can damage operating systems.
+
+Phishing
+
+Phishing emails trick users into revealing passwords.
+
+Database
+
+The application connects to a MySQL database.
+
+Table
+
+The table stores customer records.
+
+Column
+
+This column contains email addresses.
+
+Row
+
+Each row represents one user.
+
+Query
+
+The query returned no results.
+
+SQL
+
+SQL is used to manage relational databases.
+
+Index
+
+Indexes improve query performance.
+
+Transaction
+
+Transactions ensure data consistency.
+
+Constraint
+
+Constraints prevent invalid data.
+
+Schema
+
+The database schema defines table structures.
+
+Migration
+
+Database migrations should be tested carefully.
+
+Replication
+
+Replication improves database reliability.
+
+Backup
+
+Regular backups prevent data loss.
+
+Restore
+
+The administrator restored the database successfully.
+
+Server
+
+The server handles thousands of requests.
+
+Client
+
+The client sends requests to the server.
+
+API
+
+The frontend consumes REST APIs.
+
+Endpoint
+
+This endpoint returns user information.
+
+Request
+
+The browser sent an HTTP request.
+
+Response
+
+The API response contained an error message.
+
+Protocol
+
+HTTPS is a secure protocol.
+
+HTTP
+
+HTTP requests are stateless.
+
+HTTPS
+
+HTTPS encrypts network communication.
+
+TCP
+
+TCP guarantees reliable data transfer.
+
+UDP
+
+UDP is faster but less reliable.
+
+Socket
+
+Sockets enable real-time communication.
+
+WebSocket
+
+WebSocket supports instant messaging features.
+
+DNS
+
+DNS converts domains into IP addresses.
+
+Domain
+
+The company purchased a new domain.
+
+Hosting
+
+Cloud hosting improves scalability.
+
+Cloud
+
+Many startups rely on cloud services.
+
+Dark clouds gathered before the storm.
+
+Container
+
+Docker containers simplify deployment.
+
+The shipping company moved goods in large metal containers.
+
+Docker
+
+Docker improves development consistency.
+
+Kubernetes
+
+Kubernetes manages container orchestration.
+
+Cluster
+
+The cluster handled heavy workloads.
+
+Virtualization
+
+Virtualization improves hardware utilization.
+
+Infrastructure
+
+Modern infrastructure supports high traffic.
+
+DevOps
+
+DevOps encourages collaboration between teams.
+
+CI/CD
+
+CI/CD pipelines automate testing and deployment.
+
+Pipeline
+
+The deployment pipeline failed unexpectedly.
+
+Repository
+
+The repository stores project source code.
+
+Version control
+
+Version control tracks code changes.
+
+Git
+
+Git is widely used in software development.
+
+Branch
+
+Developers created a feature branch.
+
+Merge
+
+The pull request was merged successfully.
+
+Cars must merge carefully onto the busy highway.
+
+Commit
+
+Each commit should contain meaningful messages.
+
+Push
+
+He pushed the latest updates to GitHub.
+
+Pull request
+
+The pull request requires review.
+
+Review
+
+Code reviews improve software quality.
+
+Conflict
+
+Merge conflicts must be resolved carefully.
+
+Rollback
+
+The deployment rollback restored stability.
+
+Testing
+
+Automated testing reduces human error.
+
+Unit test
+
+Unit tests verify small functions.
+
+Integration test
+
+Integration tests check system compatibility.
+
+End-to-end test
+
+End-to-end tests simulate real users.
+
+Automation
+
+Automation saves development time.
+
+Coverage
+
+Test coverage should remain high.
+
+Assertion
+
+Assertions validate expected behavior.
+
+Mock
+
+Mocks isolate dependencies during testing.
+
+Sandbox
+
+Developers tested the feature in a sandbox environment.
+
+The children built castles in the sandbox at the park.
+
+Environment
+
+The production environment differs from development.
+
+Development
+
+The development server runs locally.
+
+Staging
+
+Staging environments help identify issues.
+
+Production
+
+Production systems require stability.
+
+Monitoring
+
+Monitoring detects abnormal activity.
+
+Analytics
+
+Analytics provide insights into user behavior.
+
+Logging
+
+Centralized logging simplifies debugging.
+
+Metrics
+
+Performance metrics help optimize systems.
+
+Dashboard
+
+The dashboard displays server statistics.
+
+Alert
+
+The monitoring system triggered an alert.
+
+Notification
+
+Developers received deployment notifications.
+
+Documentation
+
+Clear documentation improves onboarding.
+
+Comment
+
+Comments explain complex logic.
+
+Wiki
+
+The internal wiki contains technical guides.
+
+Specification
+
+The specification described system requirements.
+
+Requirement
+
+The client changed several requirements.
+
+Feature
+
+The new feature improves usability.
+
+Roadmap
+
+The roadmap outlines future development plans.
+
+Sprint
+
+The team completed the sprint successfully.
+
+Scrum
+
+Scrum meetings encourage communication.
+
+Agile
+
+Agile methodologies support iterative development.
+
+Kanban
+
+Kanban boards visualize workflows.
+
+Task
+
+Each task was assigned to a developer.
+
+Ticket
+
+The bug ticket was marked as resolved.
+
+Issue
+
+The issue affected multiple users.
+
+Milestone
+
+The project reached an important milestone.
+
+Deadline
+
+The release deadline is approaching.
+
+Estimate
+
+The time estimate was inaccurate.
+
+Requirement analysis
+
+Requirement analysis prevents misunderstandings.
+
+Prototype
+
+The prototype demonstrated the product idea.
+
+Wireframe
+
+The designer created a wireframe first.
+
+Mockup
+
+The mockup looked modern and professional.
+
+UI
+
+UI design affects user satisfaction.
+
+UX
+
+Good UX improves engagement.
+
+Responsive design
+
+Responsive design supports mobile devices.
+
+Accessibility
+
+Accessibility improves inclusiveness.
+
+Animation
+
+Animations enhance user interaction.
+
+Transition
+
+CSS transitions create smooth effects.
+
+Layout
+
+The layout adapts to screen size.
+
+Theme
+
+Dark themes reduce eye strain.
+
+Typography
+
+Typography affects readability.
+
+Rendering
+
+Server-side rendering improves SEO.
+
+Hydration
+
+Hydration connects HTML with JavaScript.
+
+Routing
+
+Frontend routing improves navigation.
+
+State
+
+State management becomes complex in large applications.
+
+Store
+
+Vuex stores application state.
+
+Hook
+
+React hooks simplify logic reuse.
+
+Lifecycle
+
+Lifecycle hooks manage component behavior.
+
+Directive
+
+Vue directives simplify DOM manipulation.

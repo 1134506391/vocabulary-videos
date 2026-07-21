@@ -1,0 +1,723 @@
+Food.
+
+I prefer home-cooked food over takeaway.
+
+Diet.
+
+She is on a low-sugar diet this month.
+
+Appetite.
+
+I lost my appetite when I was sick.
+
+Treat.
+
+It's my treat today — order whatever you like.
+
+The doctor treated her infection with antibiotics.
+
+Cater.
+
+The company catered lunch for the whole team.
+
+Provision.
+
+She made provision for the whole week's meals.
+
+Edible.
+
+Are these mushrooms edible?
+
+Recipe.
+
+She followed a simple recipe for banana bread.
+
+Restaurant.
+
+We found a great restaurant near the hotel.
+
+Refectory.
+
+The school refectory serves hot lunch every day.
+
+Bar.
+
+He ordered a drink at the bar.
+
+She keeps a chocolate bar in her bag for emergencies.
+
+Cafeteria.
+
+We grabbed a quick lunch at the cafeteria.
+
+Buffet.
+
+The hotel offers a buffet breakfast every morning.
+
+Barbecue.
+
+We had a barbecue in the garden last weekend.
+
+Supper.
+
+We had a light supper before bed.
+
+Banquet.
+
+The company held a banquet to celebrate the anniversary.
+
+Refreshment.
+
+Light refreshments were served after the meeting.
+
+Snack.
+
+She had a small snack between lunch and dinner.
+
+Appetizer.
+
+We shared a vegetable platter as an appetizer.
+
+Cuisine.
+
+She loves trying different cuisines when she travels.
+
+Menu.
+
+The waiter handed us the menu as we sat down.
+
+Order.
+
+Are you ready to order?
+
+The soldiers followed every order without question.
+
+Please arrange the files in alphabetical order.
+
+Takeaway.
+
+Let's just get a takeaway tonight.
+
+Chef.
+
+The chef came out to greet the guests.
+
+Gourmet.
+
+He considers himself a gourmet and loves fine food.
+
+Vegetarian.
+
+She became vegetarian two years ago.
+
+Cutlery.
+
+Please set the cutlery on the table before dinner.
+
+Silver.
+
+The cutlery set is made of silver.
+
+Ceramic.
+
+She bought a ceramic mug at the craft market.
+
+Porcelain.
+
+The teacup is made of fine porcelain.
+
+Bowl.
+
+She had a bowl of noodles for lunch.
+
+Dish.
+
+This is my favorite dish — braised pork ribs.
+
+Saucer.
+
+The cup was placed neatly on its saucer.
+
+Tray.
+
+She carried the food on a tray to the table.
+
+Fork.
+
+He used a fork to eat the pasta.
+
+Knife.
+
+Please pass me the knife to cut the bread.
+
+Spoon.
+
+She stirred her tea with a small spoon.
+
+Glass.
+
+Can I have a glass of water please?
+
+Mug.
+
+He made himself a mug of hot tea.
+
+Kettle.
+
+The kettle boiled and she made some coffee.
+
+Pan.
+
+She fried the eggs in a non-stick pan.
+
+Pot.
+
+The soup has been in the pot for an hour.
+
+Stove.
+
+He left the pot on the stove too long.
+
+Furnace.
+
+The furnace kept the whole house warm all winter.
+
+Oven.
+
+The cookies are in the oven — five more minutes.
+
+Tin.
+
+She opened a tin of soup for a quick lunch.
+
+The bracelet is made of cheap tin, not silver.
+
+Lid.
+
+Put the lid on the pot to keep it warm.
+
+Drink.
+
+Drink plenty of water every day.
+
+Beverage.
+
+Tea is the most popular hot beverage here.
+
+Juice.
+
+She had a glass of fresh orange juice for breakfast.
+
+Soda.
+
+He ordered a soda with his burger.
+
+Coffee.
+
+I need a coffee to wake up in the morning.
+
+Alcohol.
+
+He decided to cut down on alcohol this year.
+
+Liquor.
+
+The shop sells a wide range of liquor.
+
+Whiskey.
+
+He sipped a glass of whiskey by the fireplace.
+
+Brandy.
+
+She had a small glass of brandy after dinner.
+
+Drunk.
+
+He got drunk at the party and called a taxi.
+
+Tobacco.
+
+He gave up tobacco five years ago.
+
+Cigarette.
+
+He stepped outside for a cigarette after dinner.
+
+Sober.
+
+Make sure you're completely sober before driving.
+
+Vegetable.
+
+Try to eat at least three vegetables every day.
+
+Tomato.
+
+She sliced a tomato and added it to the salad.
+
+Potato.
+
+He had mashed potato with his steak.
+
+Pea.
+
+She added a handful of peas to the fried rice.
+
+Bean.
+
+He made a simple bean soup for dinner.
+
+Cucumber.
+
+She put sliced cucumber in her water.
+
+Cabbage.
+
+She stir-fried cabbage with garlic for dinner.
+
+Onion.
+
+Chop the onion finely before adding it to the pan.
+
+Mushroom.
+
+He added mushrooms to the pasta sauce.
+
+Eggplant.
+
+She made a tasty dish with eggplant and minced pork.
+
+Carrot.
+
+He peeled and cut the carrots into thin sticks.
+
+Turnip.
+
+She added turnip to the winter soup.
+
+Radish.
+
+She sliced some radish for the salad.
+
+Fruit.
+
+Try to eat two pieces of fruit a day.
+
+Peel.
+
+Peel the orange before eating it.
+
+Strip.
+
+She stripped the leaves off the herbs.
+
+He tore a strip of paper to mark his place in the book.
+
+Core.
+
+He threw the apple core in the bin.
+
+Honesty is at the very core of a good friendship.
+
+Hull.
+
+She hulled the strawberries before making the jam.
+
+Cherry.
+
+She put a cherry on top of the cake.
+
+Berry.
+
+She added fresh berries to the yogurt.
+
+Grape.
+
+He bought a bunch of grapes from the market.
+
+Papaya.
+
+She had papaya and yogurt for breakfast.
+
+Peach.
+
+The peaches were sweet and very ripe.
+
+Pear.
+
+She packed a pear in her lunch box.
+
+Plum.
+
+The plums from our garden are delicious this year.
+
+Orange.
+
+He peeled an orange and shared it with his son.
+
+Melon.
+
+She cut up a melon for everyone at the table.
+
+Lemon.
+
+She squeezed a lemon into her warm water each morning.
+
+Kiwi.
+
+She sliced a kiwi and put it on the fruit plate.
+
+Crop.
+
+The rice crop was very good this year.
+
+She cropped the photo to remove the background.
+
+Corn.
+
+She boiled some corn on the cob for dinner.
+
+Grain.
+
+Brown rice is a healthier whole grain option.
+
+He cut the wood along the grain to make it smoother.
+
+Wheat.
+
+Bread is made from wheat flour.
+
+Reap.
+
+He worked hard all year and reaped good results.
+
+Flour.
+
+She measured out two cups of flour for the cake.
+
+Porridge.
+
+She has a bowl of porridge every morning.
+
+Paste.
+
+She spread tomato paste on the pizza base.
+
+He copied the text and pasted it into the document.
+
+Livestock.
+
+The farm raises livestock including pigs and cows.
+
+Chicken.
+
+She roasted a whole chicken for Sunday dinner.
+
+Turkey.
+
+They had turkey for the Christmas meal.
+
+Beef.
+
+He ordered a beef noodle soup.
+
+Pork.
+
+She made a delicious pork stir-fry with vegetables.
+
+Mutton.
+
+He had a bowl of mutton soup on a cold day.
+
+Sausage.
+
+She grilled some sausages for breakfast.
+
+Fish.
+
+He had grilled fish and rice for dinner.
+
+Pond.
+
+The kids fed the fish in the park pond.
+
+Rod.
+
+He sat by the river with his fishing rod.
+
+Dairy.
+
+She avoids dairy because she is lactose intolerant.
+
+Milk.
+
+He drinks a glass of warm milk before bed.
+
+Yogurt.
+
+She has yogurt and fruit for breakfast every day.
+
+Cream.
+
+She added a little cream to the pasta sauce.
+
+Cheese.
+
+He put some cheese on the toast.
+
+Butter.
+
+She spread butter on the warm bread.
+
+Salad.
+
+She made a simple salad with tomato and cucumber.
+
+Sandwich.
+
+He had a chicken sandwich for lunch.
+
+Hamburger.
+
+We had hamburgers at the barbecue last Saturday.
+
+Loaf.
+
+She bought a fresh loaf of bread this morning.
+
+He spent the whole weekend loafing around at home.
+
+Pie.
+
+She baked an apple pie for the whole family.
+
+Pizza.
+
+We ordered two pizzas for dinner last night.
+
+Pasta.
+
+She cooked pasta with tomato sauce for the kids.
+
+Spaghetti.
+
+Spaghetti with meatballs is his favorite dish.
+
+Soup.
+
+She made a big pot of vegetable soup.
+
+Pudding.
+
+She made chocolate pudding for dessert.
+
+Biscuit.
+
+He dipped his biscuit into his tea.
+
+Jam.
+
+She spread strawberry jam on her toast.
+
+Nut.
+
+She keeps a bag of mixed nuts as a healthy snack.
+
+Tighten the nut on the bolt before riding the bike.
+
+Chocolate.
+
+He bought her a box of chocolate for her birthday.
+
+Ice cream.
+
+We had ice cream after dinner on a hot day.
+
+Vanilla.
+
+She ordered a vanilla ice cream cone.
+
+Mustard.
+
+He put a little mustard on his hot dog.
+
+Wasabi.
+
+A little wasabi goes a long way — it's very spicy.
+
+Pepper.
+
+Add a little pepper to taste before serving.
+
+Ginger.
+
+She added fresh ginger to the stir-fry.
+
+Garlic.
+
+Fry the garlic in oil before adding the vegetables.
+
+Scallion.
+
+She sprinkled chopped scallion over the noodles.
+
+Vinegar.
+
+She added a splash of vinegar to the salad dressing.
+
+Salt.
+
+Don't add too much salt — it's bad for you.
+
+Sugar.
+
+She uses honey instead of sugar in her tea.
+
+Candy.
+
+The kids got a bag of candy on Halloween.
+
+Honey.
+
+She stirred a spoon of honey into her tea.
+
+Flavor.
+
+Which flavor do you want — chocolate or vanilla?
+
+Sour.
+
+This lemon juice is very sour.
+
+Sweet.
+
+The mango is very sweet and juicy.
+
+Bitter.
+
+The coffee tastes a bit bitter without sugar.
+
+Spicy.
+
+The curry was too spicy for the kids.
+
+Delicious.
+
+The food at that restaurant was absolutely delicious.
+
+Yummy.
+
+This cake is so yummy — can I have another piece?
+
+Tasty.
+
+She made a really tasty dish with simple ingredients.
+
+Hunger.
+
+He went to bed with hunger because he missed dinner.
+
+Thirsty.
+
+I'm so thirsty — can I have some water please?
+
+Spice.
+
+She added a mix of spices to the soup.
+
+A weekend trip abroad would really spice up their routine.
+
+Sauce.
+
+Can I have some extra sauce on the side?
+
+Ketchup.
+
+He put ketchup on his fries.
+
+Perfume.
+
+The kitchen was filled with the perfume of fresh bread.
+
+Ingredient.
+
+Fresh ingredients make all the difference in cooking.
+
+Supplement.
+
+She takes a vitamin supplement every morning.
+
+Digest.
+
+Eat slowly so your body can digest the food properly.
+
+Cook.
+
+He cooks dinner for the family every evening.
+
+Bake.
+
+She baked a birthday cake for her son.
+
+Fry.
+
+He fried some eggs and toast for breakfast.
+
+Roast.
+
+They had a roast chicken for Sunday dinner.
+
+Toast.
+
+She toasted the bread and added some butter.
+
+They raised their glasses for a toast to the newlyweds.
+
+Suck.
+
+The baby sucked on the bottle quietly.
+
+Swallow.
+
+Take a sip of water to help swallow the pill.
+
+Lick.
+
+The child licked the ice cream happily.
+
+Chew.
+
+Chew your food slowly — don't rush.
+
+Gum.
+
+He chews gum after meals instead of brushing.
+
+The dentist checked her teeth and gums carefully.
+
+Soak.
+
+Soak the dried beans overnight before cooking.
+
+Dip.
+
+She dipped the bread into the olive oil.
+
+Squeeze.
+
+Squeeze some lemon juice over the fish.
+
+Stir.
+
+Stir the soup so it doesn't stick to the bottom.
+
+Grind.
+
+He ground the coffee beans fresh every morning.
+
+She's tired of the daily grind of commuting to work.
+
+Slice.
+
+She sliced the bread and put it on the table.

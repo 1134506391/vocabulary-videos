@@ -1,0 +1,515 @@
+Pioneer.
+
+She was a pioneer in online shopping.
+
+Prophet.
+
+The prophet said rain was coming soon.
+
+Herald.
+
+Warm weather is a herald of spring.
+
+Heir.
+
+He is the heir to his father's business.
+
+Successor.
+
+She was chosen as the director's successor.
+
+Generation.
+
+My parents and I are from different generations.
+
+Surname.
+
+Please write your surname first on the form.
+
+Gender.
+
+The form asks for your name and gender.
+
+Sex.
+
+The doctor told us the sex of the baby.
+
+Female.
+
+We have two female cats and one male cat.
+
+Couple.
+
+The couple moved into their new home last week.
+
+It only takes a couple of minutes to walk there.
+
+Spouse.
+
+She bought a gift for her spouse.
+
+Husband.
+
+Her husband cooks dinner every night.
+
+Gay.
+
+He came out as gay to his family last year.
+
+Grandfather.
+
+My grandfather tells great stories about his childhood.
+
+Father-in-law.
+
+My father-in-law is very kind to me.
+
+Sibling.
+
+I have two siblings, a brother and a sister.
+
+Cousin.
+
+I visited my cousin during the holiday.
+
+Nephew.
+
+My nephew just started primary school.
+
+Niece.
+
+I bought a toy for my little niece.
+
+Twin.
+
+She and her twin sister look exactly alike.
+
+Embryo.
+
+The project is still in embryo stage.
+
+Infant.
+
+The infant cried all through the night.
+
+Orphan.
+
+The orphan was adopted by a loving family.
+
+Juvenile.
+
+The court handles juvenile cases separately.
+
+Youngster.
+
+The youngsters played in the park all afternoon.
+
+Youth.
+
+He spent his youth in a small village.
+
+Gang.
+
+A gang of kids played football in the street.
+
+Police arrested the leader of the local gang.
+
+Teenager.
+
+My teenager spends hours on his phone.
+
+Adolescence.
+
+Adolescence can be a tough time for many kids.
+
+Kin.
+
+All her kin came to the wedding.
+
+Folk.
+
+The local folk are very friendly here.
+
+Relative.
+
+We visited relatives during the Spring Festival.
+
+Intimate.
+
+She shared the news with her most intimate friend.
+
+Dear.
+
+Dear Mom, I miss you so much.
+
+Darling.
+
+Good morning, darling. Did you sleep well?
+
+Lover.
+
+They have been lovers for three years.
+
+Beloved.
+
+She returned to her beloved hometown.
+
+Madam.
+
+Excuse me, madam, you dropped your bag.
+
+Hostess.
+
+The hostess prepared a lovely meal for us.
+
+Landlady.
+
+My landlady is very kind and helpful.
+
+Mistress.
+
+She is the mistress of the house.
+
+Housewife.
+
+She is a full-time housewife and a great cook.
+
+Widow.
+
+The widow lives alone in that small house.
+
+Maid.
+
+The maid cleaned the room every morning.
+
+Maiden.
+
+It was the ship's maiden voyage.
+
+Household.
+
+We share all the household chores equally.
+
+Chore.
+
+Washing dishes is my least favorite chore.
+
+Host.
+
+Our host made everyone feel very welcome.
+
+She hosts a popular cooking show on TV.
+
+There was a whole host of problems with the plan.
+
+Landlord.
+
+The landlord raised the rent this month.
+
+Tenant.
+
+The tenant moved out at the end of the month.
+
+Guest.
+
+We prepared the spare room for our guest.
+
+Customer.
+
+The customer asked for a refund.
+
+Client.
+
+She met with a new client this morning.
+
+Encounter.
+
+I had an unexpected encounter with an old friend.
+
+Chase.
+
+The dog chased the ball across the yard.
+
+Miss.
+
+I really miss my family when I travel.
+
+She missed the last bus and had to walk home.
+
+Miss Chen will be your teacher this term.
+
+Appointment.
+
+I have a dentist appointment this afternoon.
+
+Accompany.
+
+He accompanied his wife to the hospital.
+
+Dependent.
+
+The child is still dependent on his parents.
+
+Propose.
+
+He got down on one knee and proposed.
+
+She proposed a new plan at the meeting.
+
+Engagement.
+
+They announced their engagement last week.
+
+Marry.
+
+They plan to marry next spring.
+
+Wedding.
+
+The wedding was small but very beautiful.
+
+Honeymoon.
+
+They spent their honeymoon in Japan.
+
+Kiss.
+
+She kissed her child on the forehead.
+
+Divorce.
+
+They decided to divorce after many years.
+
+Separate.
+
+The kids sleep in separate rooms now.
+
+Single.
+
+She has been single for two years.
+
+The singer released a new single last week.
+
+He booked a single room for the business trip.
+
+Soul.
+
+He is a kind and gentle soul.
+
+She loves listening to old soul music.
+
+Respective.
+
+We each went back to our respective homes.
+
+Each.
+
+Each child got a small gift.
+
+Individual.
+
+Every individual has the right to privacy.
+
+Commuter.
+
+He is a daily commuter between home and work.
+
+Neighbourhood.
+
+We live in a quiet neighbourhood.
+
+Member.
+
+She became a member of the book club.
+
+Boss.
+
+My boss gave me good feedback today.
+
+Stop bossing your little brother around all the time.
+
+Manager.
+
+The manager held a short meeting this morning.
+
+Supervisor.
+
+My supervisor helped me with the new task.
+
+Subordinate.
+
+A good leader respects their subordinates.
+
+Partner.
+
+She and her business partner opened a café.
+
+Mate.
+
+My classmates threw me a surprise birthday party.
+
+Many animals return to the same spot each year to find a mate.
+
+Colleague.
+
+I had lunch with a colleague today.
+
+Comrade.
+
+They fought side by side as comrades.
+
+Acquaintance.
+
+He is just an acquaintance, not a close friend.
+
+Friendship.
+
+Their friendship has lasted over twenty years.
+
+Affection.
+
+She showed great affection toward her students.
+
+Stranger.
+
+Don't accept food from a stranger.
+
+Apprentice.
+
+He started as an apprentice in a bakery.
+
+Deputy.
+
+The deputy manager ran the meeting today.
+
+Hero.
+
+Firefighters are real-life heroes.
+
+Heroine.
+
+She is the heroine of the story.
+
+Actress.
+
+The actress gave a wonderful performance.
+
+Chancellor.
+
+The chancellor announced new budget plans.
+
+Commander.
+
+The commander gave clear orders to the team.
+
+Director.
+
+The director called for another take.
+
+She was recently appointed a director of the company.
+
+Proponent.
+
+She is a strong proponent of healthy eating.
+
+Committee.
+
+The committee will meet again next Monday.
+
+Council.
+
+The local council fixed the road last week.
+
+Delegate.
+
+She was chosen as a delegate for the conference.
+
+Good managers know how to delegate tasks to their team.
+
+Specialist.
+
+I was referred to a skin specialist.
+
+Consultant.
+
+The company hired a consultant for advice.
+
+Veterinary.
+
+He took his dog to the veterinary clinic.
+
+Counselor.
+
+She talked to a school counselor about stress.
+
+Solicitor.
+
+We hired a solicitor to handle the contract.
+
+Attorney.
+
+The attorney spoke clearly in court.
+
+Umpire.
+
+The umpire made a controversial call.
+
+Cashier.
+
+The cashier gave me the wrong change.
+
+Fireman.
+
+The fireman rescued a cat from a tree.
+
+Nurse.
+
+The nurse checked my temperature.
+
+She nursed her sick father back to health.
+
+Gardener.
+
+The gardener planted new flowers this morning.
+
+Barber.
+
+I went to the barber for a trim.
+
+Haircut.
+
+He looks much better after his haircut.
+
+Fisherman.
+
+The fisherman caught a big fish today.
+
+Butcher.
+
+I bought some fresh meat from the butcher.
+
+Groom.
+
+The groom looked nervous at the altar.
+
+She grooms her horse every morning before riding.
+
+Hostage.
+
+The police negotiated with the hostage-takers.
+
+Toil.
+
+The workers toiled all day in the sun.
+
+Beggar.
+
+He gave some coins to the beggar on the street.
+
+Slave.
+
+History tells us about the suffering of slaves.
+
+Coward.
+
+He felt like a coward for not speaking up.
