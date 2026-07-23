@@ -6,6 +6,7 @@ import {
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { DailyUsage, VideoJob, VideoJobStatus } from '../database/entities';
+import { AgnesKeyService } from './agnes-key.service';
 import { VideoWorkerService } from './video-worker.service';
 
 @Injectable()
@@ -16,38 +17,42 @@ export class VideoOperationsService {
     @InjectRepository(DailyUsage)
     private readonly usage: Repository<DailyUsage>,
     private readonly worker: VideoWorkerService,
+    private readonly keys: AgnesKeyService,
   ) {}
 
   async status() {
-    const [statusRows, chapterRows, recentUsage] = await Promise.all([
-      this.jobs
-        .createQueryBuilder('job')
-        .select('job.status', 'status')
-        .addSelect('COUNT(*)', 'count')
-        .groupBy('job.status')
-        .getRawMany<{ status: VideoJobStatus; count: string }>(),
-      this.jobs
-        .createQueryBuilder('job')
-        .innerJoin('job.sentence', 'sentence')
-        .innerJoin('sentence.word', 'word')
-        .innerJoin('word.chapter', 'chapter')
-        .select('chapter.number', 'chapterNumber')
-        .addSelect('chapter.title', 'chapterTitle')
-        .addSelect('COUNT(*)', 'total')
-        .addSelect(
-          `SUM(CASE WHEN job.status = '${VideoJobStatus.DOWNLOADED}' THEN 1 ELSE 0 END)`,
-          'downloaded',
-        )
-        .groupBy('chapter.id')
-        .orderBy('chapter.number', 'ASC')
-        .getRawMany<{
-          chapterNumber: string;
-          chapterTitle: string;
-          total: string;
-          downloaded: string;
-        }>(),
-      this.usage.find({ order: { localDate: 'DESC' }, take: 7 }),
-    ]);
+    const [statusRows, chapterRows, recentUsage, keySummary, keyList] =
+      await Promise.all([
+        this.jobs
+          .createQueryBuilder('job')
+          .select('job.status', 'status')
+          .addSelect('COUNT(*)', 'count')
+          .groupBy('job.status')
+          .getRawMany<{ status: VideoJobStatus; count: string }>(),
+        this.jobs
+          .createQueryBuilder('job')
+          .innerJoin('job.sentence', 'sentence')
+          .innerJoin('sentence.word', 'word')
+          .innerJoin('word.chapter', 'chapter')
+          .select('chapter.number', 'chapterNumber')
+          .addSelect('chapter.title', 'chapterTitle')
+          .addSelect('COUNT(*)', 'total')
+          .addSelect(
+            `SUM(CASE WHEN job.status = '${VideoJobStatus.DOWNLOADED}' THEN 1 ELSE 0 END)`,
+            'downloaded',
+          )
+          .groupBy('chapter.id')
+          .orderBy('chapter.number', 'ASC')
+          .getRawMany<{
+            chapterNumber: string;
+            chapterTitle: string;
+            total: string;
+            downloaded: string;
+          }>(),
+        this.usage.find({ order: { localDate: 'DESC' }, take: 7 }),
+        this.keys.availableKeySummary(),
+        this.keys.list(),
+      ]);
 
     const counts = Object.fromEntries(
       Object.values(VideoJobStatus).map((status) => [status, 0]),
@@ -57,7 +62,9 @@ export class VideoOperationsService {
     }
 
     return {
-      worker: this.worker.runtimeState(),
+      worker: await this.worker.runtimeState(),
+      keys: keySummary,
+      keyDetails: keyList,
       counts,
       total: Object.values(counts).reduce((sum, count) => sum + count, 0),
       chapters: chapterRows.map((row) => ({
@@ -67,6 +74,7 @@ export class VideoOperationsService {
         downloaded: Number(row.downloaded),
       })),
       recentUsage,
+      note: 'DAILY_VIDEO_SECONDS is a soft estimate only. New submissions stop when every enabled key returns a real quota HTTP 429.',
     };
   }
 
@@ -96,6 +104,7 @@ export class VideoOperationsService {
   private resetFailedJob(job: VideoJob): void {
     job.status = VideoJobStatus.PENDING;
     job.externalVideoId = null;
+    job.apiKeyId = null;
     job.remoteUrl = null;
     job.localPath = null;
     job.attempts = 0;

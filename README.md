@@ -21,11 +21,37 @@ npm install
 copy .env.example .env
 ```
 
-Set `AGNES_API_KEY` in `.env`. Important defaults:
+Set Agnes keys once (either seed from `.env` or add via API). After the first
+seed, keys live in SQLite table `agnes_api_keys` and rotate automatically.
 
-- `DAILY_VIDEO_SECONDS=500` and `VIDEO_CLIP_SECONDS=5` allow 100 submissions
-  per local calendar day.
+```env
+AGNES_API_KEY_1=sk-...
+AGNES_API_KEY_2=sk-...
+AGNES_API_KEY_3=sk-...
+```
+
+Or add without restarting:
+
+```powershell
+Invoke-RestMethod -Method Post -ContentType "application/json" `
+  -Body '{"apiKey":"sk-...","label":"account-2"}' `
+  http://localhost:3000/videos/keys
+```
+
+Quota logic:
+
+- `DAILY_VIDEO_SECONDS` is a **soft estimate** for logs/stats only.
+- Real stop condition is Agnes **HTTP 429 quota** on a key.
+- When one key hits quota, it is marked exhausted for the local day and the
+  worker switches to the next key automatically.
+- New submissions pause only when **all enabled keys** are exhausted today.
+
+Other defaults:
+
 - `VIDEO_TIMEZONE=Asia/Shanghai` controls the daily reset date.
+- `VIDEO_POLL_INTERVAL_MS` controls how often the worker polls Agnes for
+  status. Agnes rejects too-frequent status requests, so the worker enforces
+  a minimum of `60s`.
 - `WORKER_AUTO_START=true` resumes processing when the server restarts.
 - `DATABASE_PATH=./data/vocabulary-videos.sqlite` keeps queue progress.
 - `VIDEO_OUTPUT_ROOT=./videos` stores clips, manifests, and chapter videos.
@@ -62,8 +88,19 @@ changes, its job returns to `pending`.
 ## Operate the queue
 
 ```powershell
-# Progress by state and chapter, plus recent daily usage
+# Progress by state and chapter, plus recent daily usage and key status
 Invoke-RestMethod http://localhost:3000/videos/status
+
+# List API keys (masked)
+Invoke-RestMethod http://localhost:3000/videos/keys
+
+# Add another key without restart
+Invoke-RestMethod -Method Post -ContentType "application/json" `
+  -Body '{"apiKey":"sk-...","label":"account-2"}' `
+  http://localhost:3000/videos/keys
+
+# Clear today's exhaustion for one key
+Invoke-RestMethod -Method Post http://localhost:3000/videos/keys/2/reset
 
 # Start or resume
 Invoke-RestMethod -Method Post http://localhost:3000/videos/start
@@ -85,10 +122,11 @@ The worker handles only one Agnes generation at a time. Its state flow is:
 
 `pending -> submitted -> processing -> completed -> downloaded`
 
-It records `video_id` before polling, so a restart resumes that Agnes job
-instead of submitting a duplicate. Network failures use exponential backoff.
-HTTP 429 pauses submissions for the remainder of the configured local day.
-Every attempted submission reserves five seconds conservatively.
+It records `video_id` (and which API key created it) before polling, so a
+restart resumes that Agnes job instead of submitting a duplicate. Network
+failures use exponential backoff. A real quota HTTP 429 marks that key
+exhausted for today and switches to the next key. New submissions pause only
+when every enabled key is exhausted.
 
 ## Logging and diagnosing waits
 

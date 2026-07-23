@@ -6,6 +6,7 @@ import { dirname, join } from 'node:path';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import {
+  AgnesApiKey,
   Chapter,
   DailyUsage,
   Sentence,
@@ -25,7 +26,14 @@ mkdirSync(dirname(databasePath), { recursive: true });
     TypeOrmModule.forRoot({
       type: 'sqlite',
       database: databasePath,
-      entities: [Chapter, VocabularyWord, Sentence, VideoJob, DailyUsage],
+      entities: [
+        Chapter,
+        VocabularyWord,
+        Sentence,
+        VideoJob,
+        DailyUsage,
+        AgnesApiKey,
+      ],
       synchronize: process.env.DATABASE_SYNCHRONIZE !== 'false',
     }),
     ImporterModule,

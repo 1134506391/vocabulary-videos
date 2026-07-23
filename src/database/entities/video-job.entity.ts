@@ -44,6 +44,10 @@ export class VideoJob {
   @Column({ type: 'varchar', nullable: true, unique: true })
   externalVideoId: string | null;
 
+  /** Agnes API key row used to create this remote task. */
+  @Column({ type: 'integer', nullable: true })
+  apiKeyId: number | null;
+
   @Column({ type: 'text', nullable: true })
   remoteUrl: string | null;
 

@@ -14,12 +14,9 @@ import {
   AgnesClient,
   AgnesStatusResponse,
 } from './agnes.client';
+import { AgnesKeyService } from './agnes-key.service';
 import { ChapterAssemblyService } from './chapter-assembly.service';
-import {
-  clipRelativePath,
-  hasDailyBudget,
-  remoteJobStatus,
-} from './video-policy';
+import { clipRelativePath, remoteJobStatus } from './video-policy';
 
 @Injectable()
 export class VideoWorkerService
@@ -29,22 +26,29 @@ export class VideoWorkerService
   private timer?: NodeJS.Timeout;
   private running = false;
   private paused = true;
-  private rateLimitedOnDate: string | null = null;
-  private budgetExhaustedOnDate: string | null = null;
+  /** Set when every enabled key hit a real quota 429 for the local day. */
+  private allKeysExhaustedOnDate: string | null = null;
+  private softBudgetWarnedOnDate: string | null = null;
 
   constructor(
     @InjectRepository(VideoJob)
     private readonly jobs: Repository<VideoJob>,
     private readonly dataSource: DataSource,
     private readonly agnes: AgnesClient,
+    private readonly keys: AgnesKeyService,
     private readonly assembly: ChapterAssemblyService,
   ) {}
 
   onApplicationBootstrap(): void {
-    this.paused =
-      process.env.WORKER_AUTO_START === 'false' || !this.agnes.isConfigured();
+    void this.bootstrap();
+  }
+
+  private async bootstrap(): Promise<void> {
+    const configured = await this.agnes.isConfigured();
+    this.paused = process.env.WORKER_AUTO_START === 'false' || !configured;
+    const summary = await this.keys.availableKeySummary();
     this.logger.log(
-      `Worker initialized: ${this.paused ? 'paused' : 'running'}, poll interval ${this.pollIntervalMs / 1000}s, daily budget ${this.dailyVideoSeconds}s.`,
+      `Worker initialized: ${this.paused ? 'paused' : 'running'}, poll interval ${this.pollIntervalMs / 1000}s, soft estimate ${this.dailyVideoSeconds}s/key, keys available today ${summary.availableToday}/${summary.totalEnabled}.`,
     );
     this.timer = setInterval(() => {
       void this.tick();
@@ -61,17 +65,28 @@ export class VideoWorkerService
     }
   }
 
-  async start(): Promise<{ paused: boolean; configured: boolean }> {
-    if (!this.agnes.isConfigured()) {
-      throw new BadRequestException('AGNES_API_KEY is not configured.');
+  async start(): Promise<{
+    paused: boolean;
+    configured: boolean;
+    keys: Awaited<ReturnType<AgnesKeyService['availableKeySummary']>>;
+  }> {
+    if (!(await this.agnes.isConfigured())) {
+      throw new BadRequestException(
+        'No Agnes API keys configured. Seed AGNES_API_KEY_1..N in .env or POST /videos/keys.',
+      );
     }
     this.paused = false;
+    this.allKeysExhaustedOnDate = null;
     this.logger.log('Worker started or resumed by API request.');
     await this.tick();
     return this.runtimeState();
   }
 
-  pause(): { paused: boolean; configured: boolean } {
+  async pause(): Promise<{
+    paused: boolean;
+    configured: boolean;
+    keys: Awaited<ReturnType<AgnesKeyService['availableKeySummary']>>;
+  }> {
     this.paused = true;
     this.logger.warn(
       'Worker paused by API request. Existing Agnes tasks continue remotely and will resume polling after start.',
@@ -79,10 +94,15 @@ export class VideoWorkerService
     return this.runtimeState();
   }
 
-  runtimeState(): { paused: boolean; configured: boolean } {
+  async runtimeState(): Promise<{
+    paused: boolean;
+    configured: boolean;
+    keys: Awaited<ReturnType<AgnesKeyService['availableKeySummary']>>;
+  }> {
     return {
       paused: this.paused,
-      configured: this.agnes.isConfigured(),
+      configured: await this.agnes.isConfigured(),
+      keys: await this.keys.availableKeySummary(),
     };
   }
 
@@ -90,11 +110,11 @@ export class VideoWorkerService
     if (this.paused || this.running) {
       return;
     }
-    const today = this.localDate();
-    if (this.rateLimitedOnDate === today) {
+    const today = this.keys.localDate();
+    if (this.allKeysExhaustedOnDate === today) {
       return;
     }
-    this.rateLimitedOnDate = null;
+    this.allKeysExhaustedOnDate = null;
     this.running = true;
     try {
       await this.processOnce();
@@ -166,17 +186,8 @@ export class VideoWorkerService
       return;
     }
 
-    const reserved = await this.reserveDailyBudget();
-    if (!reserved) {
-      if (this.budgetExhaustedOnDate !== this.localDate()) {
-        this.budgetExhaustedOnDate = this.localDate();
-        this.logger.warn(
-          `Daily generation budget exhausted (${this.dailyVideoSeconds}s). New submissions resume on the next local day.`,
-        );
-      }
-      return;
-    }
-    this.budgetExhaustedOnDate = null;
+    // Soft estimate only — real stop condition is HTTP 429 quota across all keys.
+    await this.recordSoftUsage();
     await this.submit(pending);
   }
 
@@ -186,31 +197,37 @@ export class VideoWorkerService
     try {
       const result = await this.agnes.createVideo(job.sentence.text);
       job.externalVideoId = result.video_id;
+      job.apiKeyId = result.apiKeyId;
       job.status = VideoJobStatus.SUBMITTED;
       job.submittedAt = new Date();
       job.lastError = null;
       await this.jobs.save(job);
       this.logger.log(
-        `${this.jobLabel(job)} submitted to Agnes as ${result.video_id}. Waiting for the first status poll.`,
+        `${this.jobLabel(job)} submitted to Agnes as ${result.video_id} with key #${result.apiKeyId}. Waiting for the first status poll.`,
       );
     } catch (error) {
       const apiError = this.asApiError(error);
       job.lastError = apiError.message;
-      if (apiError.rateLimited) {
-        this.rateLimitedOnDate = this.localDate();
+      if (apiError.quotaExhausted) {
+        this.allKeysExhaustedOnDate = this.keys.localDate();
       }
       const permanent =
         (apiError.statusCode !== undefined &&
           apiError.statusCode >= 400 &&
           apiError.statusCode < 500 &&
-          !apiError.rateLimited) ||
-        job.attempts >= this.maxAttempts;
+          !apiError.quotaExhausted &&
+          apiError.statusCode !== 429) ||
+        (!apiError.quotaExhausted && job.attempts >= this.maxAttempts);
       job.status = permanent ? VideoJobStatus.FAILED : VideoJobStatus.PENDING;
-      job.nextAttemptAt = permanent ? null : this.retryTime(job.attempts);
+      job.nextAttemptAt = permanent
+        ? null
+        : apiError.statusCode === 429
+          ? new Date(Date.now() + this.pollIntervalMs)
+          : this.retryTime(job.attempts);
       await this.jobs.save(job);
-      if (apiError.rateLimited) {
+      if (apiError.quotaExhausted) {
         this.logger.warn(
-          `${this.jobLabel(job)} received HTTP 429 from Agnes. New submissions are paused until tomorrow.`,
+          `${this.jobLabel(job)} could not submit: all Agnes keys are quota-exhausted for today. Will resume next local day or after POST /videos/keys/:id/reset.`,
         );
       } else if (permanent) {
         this.logger.error(
@@ -233,9 +250,18 @@ export class VideoWorkerService
     }
 
     try {
-      const result = await this.agnes.getVideo(job.externalVideoId);
+      const result = await this.agnes.getVideo(
+        job.externalVideoId,
+        job.apiKeyId,
+      );
       const previousStatus = job.status;
       this.applyRemoteStatus(job, result);
+      if (
+        job.status === VideoJobStatus.SUBMITTED ||
+        job.status === VideoJobStatus.PROCESSING
+      ) {
+        job.nextAttemptAt = new Date(Date.now() + this.pollIntervalMs);
+      }
       await this.jobs.save(job);
       const elapsed = job.submittedAt
         ? `${Math.floor((Date.now() - job.submittedAt.getTime()) / 1000)}s`
@@ -246,23 +272,27 @@ export class VideoWorkerService
     } catch (error) {
       const apiError = this.asApiError(error);
       job.lastError = apiError.message;
-      job.nextAttemptAt = this.retryTime(1);
+      job.nextAttemptAt =
+        apiError.statusCode === 429
+          ? new Date(Date.now() + this.pollIntervalMs)
+          : this.retryTime(1);
       if (
         apiError.statusCode !== undefined &&
         apiError.statusCode >= 400 &&
         apiError.statusCode < 500 &&
-        !apiError.rateLimited
+        !apiError.quotaExhausted &&
+        apiError.statusCode !== 429
       ) {
         job.status = VideoJobStatus.FAILED;
         job.nextAttemptAt = null;
       }
-      if (apiError.rateLimited) {
-        this.rateLimitedOnDate = this.localDate();
+      if (apiError.quotaExhausted) {
+        this.allKeysExhaustedOnDate = this.keys.localDate();
       }
       await this.jobs.save(job);
-      if (apiError.rateLimited) {
+      if (apiError.quotaExhausted) {
         this.logger.warn(
-          `${this.jobLabel(job)} status polling received HTTP 429. Polling pauses until tomorrow.`,
+          `${this.jobLabel(job)} status polling blocked: all Agnes keys are quota-exhausted for today.`,
         );
       } else if (job.status === VideoJobStatus.FAILED) {
         this.logger.error(
@@ -343,9 +373,13 @@ export class VideoWorkerService
     }
   }
 
-  private async reserveDailyBudget(): Promise<boolean> {
-    return this.dataSource.transaction(async (manager) => {
-      const localDate = this.localDate();
+  /**
+   * Soft estimate only. Never blocks submissions.
+   * Real quota enforcement is HTTP 429 from Agnes + key rotation.
+   */
+  private async recordSoftUsage(): Promise<void> {
+    await this.dataSource.transaction(async (manager) => {
+      const localDate = this.keys.localDate();
       let usage = await manager.findOne(DailyUsage, {
         where: { localDate },
       });
@@ -354,32 +388,21 @@ export class VideoWorkerService
         secondsReserved: 0,
         requestsSubmitted: 0,
       });
-      if (
-        !hasDailyBudget(
-          usage.secondsReserved,
-          this.clipSeconds,
-          this.dailyVideoSeconds,
-        )
-      ) {
-        return false;
-      }
       usage.secondsReserved += this.clipSeconds;
       usage.requestsSubmitted += 1;
       await manager.save(usage);
-      return true;
-    });
-  }
 
-  private localDate(date = new Date()): string {
-    const parts = new Intl.DateTimeFormat('en-US', {
-      timeZone: process.env.VIDEO_TIMEZONE,
-      year: 'numeric',
-      month: '2-digit',
-      day: '2-digit',
-    }).formatToParts(date);
-    const get = (type: Intl.DateTimeFormatPartTypes) =>
-      parts.find((part) => part.type === type)?.value ?? '';
-    return `${get('year')}-${get('month')}-${get('day')}`;
+      if (
+        this.dailyVideoSeconds > 0 &&
+        usage.secondsReserved > this.dailyVideoSeconds &&
+        this.softBudgetWarnedOnDate !== localDate
+      ) {
+        this.softBudgetWarnedOnDate = localDate;
+        this.logger.warn(
+          `Soft estimate DAILY_VIDEO_SECONDS=${this.dailyVideoSeconds} exceeded (${usage.secondsReserved}s reserved today). Continuing until Agnes returns quota 429.`,
+        );
+      }
+    });
   }
 
   private retryTime(attempt: number): Date {
@@ -397,7 +420,7 @@ export class VideoWorkerService
 
   private numberSetting(name: string, fallback: number): number {
     const value = Number(process.env[name] ?? fallback);
-    return Number.isFinite(value) && value > 0 ? value : fallback;
+    return Number.isFinite(value) && value >= 0 ? value : fallback;
   }
 
   private get clipSeconds(): number {
@@ -413,7 +436,10 @@ export class VideoWorkerService
   }
 
   private get pollIntervalMs(): number {
-    return this.numberSetting('VIDEO_POLL_INTERVAL_MS', 10_000);
+    return Math.max(
+      this.numberSetting('VIDEO_POLL_INTERVAL_MS', 60_000),
+      60_000,
+    );
   }
 
   private get videoRoot(): string {

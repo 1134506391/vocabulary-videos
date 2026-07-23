@@ -11,6 +11,7 @@ import {
   VocabularyWord,
 } from '../database/entities';
 import { AgnesClient } from './agnes.client';
+import { AgnesKeyService } from './agnes-key.service';
 import { ChapterAssemblyService } from './chapter-assembly.service';
 import { VideoWorkerService } from './video-worker.service';
 
@@ -72,6 +73,7 @@ describe('VideoWorkerService', () => {
         task_id: 'video-1',
         status: 'queued',
         progress: 0,
+        apiKeyId: 1,
       }),
     );
     const getVideo = jest.fn(() =>
@@ -95,11 +97,19 @@ describe('VideoWorkerService', () => {
       }),
     );
     const agnes = {
-      isConfigured: jest.fn(() => true),
+      isConfigured: jest.fn(async () => true),
       createVideo,
       getVideo,
       downloadVideo,
     } as unknown as AgnesClient;
+    const keys = {
+      localDate: jest.fn(() => '2026-07-22'),
+      availableKeySummary: jest.fn(async () => ({
+        totalEnabled: 1,
+        availableToday: 1,
+        exhaustedToday: 0,
+      })),
+    } as unknown as AgnesKeyService;
     const assembly = {
       writeManifest,
     } as unknown as ChapterAssemblyService;
@@ -107,6 +117,7 @@ describe('VideoWorkerService', () => {
       dataSource.getRepository(VideoJob),
       dataSource,
       agnes,
+      keys,
       assembly,
     );
     await worker.start();
@@ -122,6 +133,7 @@ describe('VideoWorkerService', () => {
     expect(saved).toMatchObject({
       status: VideoJobStatus.DOWNLOADED,
       externalVideoId: 'video-1',
+      apiKeyId: 1,
       lastError: null,
     });
     expect(saved.localPath).toContain('chapter-01/0001-atmosphere/0001-1.mp4');
